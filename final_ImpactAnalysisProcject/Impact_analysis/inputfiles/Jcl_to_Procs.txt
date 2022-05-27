@@ -1,0 +1,35 @@
+1           STATEMENT #1
+            LIST ELEMENT '*'                                                        00120000
+              FROM ENVIRONMENT 'BCBS01'                                             00130000
+                  SYSTEM 'ITS' SUBSYSTEM '*' TYPE 'PROCS' STAGE '2'                 00140025
+              OPTIONS SHOW TEXT                                                     00150000
+                          WHERE TEXT EQ 'UNLDPP01'                                  00160025
+              BUILD ACTION LIST                                                     01220000
+              .                                                                     01230000
+
+1ENVIRONMENT  BCBS01    SYSTEM  ITS       SUBSYSTEM  ITS
+ TYPE  PROCS     STAGE NUMBER 2 .
+0    ELEMENT   WIT0800P
+           34: //* **ITS210   - UPDATED THE DD FROM SYSIN TO PARMFL IN UNLDPP01   **   00180000
+          218: //WIT0830  EXEC PGM=UNLDPP01,REGION=4096K
+0    ELEMENT   WIT1100P
+            5: //*   SAMPLE     : UNLDPP01                                           * 00026000
+           28: //*R19.5.1¦ 08/15/2019 ¦ 01.2 ¦ IPP-407  ¦ TJR:MOVED UNLDPP01 PGM       00031700
+           38: //*                                      ¦ UNLDPP01                     00032700
+           46: //SYSREC   DD DSN=ITS.PROD.UNLDPP01.SYSREC.RULE(+1),                    00175100
+           51: //SYSPUNCH DD DSN=ITS.PROD.UNLDPP01.SYSPUNCH.RULE(+1),                  00178400
+           67: //SORTIN   DD DISP=SHR,DSN=ITS.PROD.UNLDPP01.SYSREC.RULE(+1)            00261000
+           69: //SORTOUT  DD DSN=ITS.PROD.UNLDPP01.SORTOUT.RULE(+1),                   00281000
+           86: //SYSREC   DD DSN=ITS.PROD.UNLDPP01.SYSREC.CLMRULE(+1),                 00531000
+           91: //SYSPUNCH DD DSN=ITS.PROD.UNLDPP01.SYSPUNCH.CLMRULE(+1),               00571100
+          110: //SORTIN   DD  DISP=SHR,DSN=ITS.PROD.UNLDPP01.SYSREC.CLMRULE(+1)        00660000
+          112: //SORTOUT  DD  DSN=ITS.PROD.UNLDPP01.SORTOUT.CLMRULE(+1),               00681000
+          129: //SYSREC   DD DSN=ITS.PROD.UNLDPP01.SYSREC.BILLRULE(+1),                00858100
+          136: //SYSPUNCH DD DSN=ITS.PROD.UNLDPP01.SYSPUNCH.BILLRULE(+1),              00881100
+          152: //SORTIN   DD DISP=SHR,DSN=ITS.PROD.UNLDPP01.SYSREC.BILLRULE(+1)        00970000
+          154: //SORTOUT  DD DSN=ITS.PROD.UNLDPP01.SORTOUT.BILLRULE(+1),               00991000
+          169: //UNLDPP01 EXEC PGM=UNLDPP01,REGION=2048K                               01240000
+          173: //ITCDDI01 DD DISP=SHR,DSN=ITS.PROD.UNLDPP01.SORTOUT.RULE(+1)           01281000
+          174: //ITCDDI02 DD DISP=SHR,DSN=ITS.PROD.UNLDPP01.SORTOUT.CLMRULE(+1)        01291000
+          175: //ITCDDI03 DD DISP=SHR,DSN=ITS.PROD.UNLDPP01.SORTOUT.BILLRULE(+1)       01301000
+          178: //ITCDDO01 DD DSN=ITS.PROD.UNLDPP01.ITCDDO01.PPSTNDRL(+1),              01320000

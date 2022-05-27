@@ -1,0 +1,203 @@
+1           STATEMENT #1
+            LIST ELEMENT '*'                                                        00120000
+              FROM ENVIRONMENT 'BCBS01'                                             00130000
+                  SYSTEM 'ITS' SUBSYSTEM '*' TYPE 'FILEDESC' STAGE '2'              00140099
+              OPTIONS SHOW TEXT                                                     00150000
+                                      WHERE TEXT EQ 'ITCAPD01'                      00160099
+                                      WHERE TEXT EQ 'ITCDBERD'                      00161099
+                                      WHERE TEXT EQ 'ITCDBF00'                      00162099
+                                      WHERE TEXT EQ 'ITCIAAI '                      00163099
+                                      WHERE TEXT EQ 'ITCIACO '                      00164099
+                                      WHERE TEXT EQ 'ITCIACP '                      00165099
+                                      WHERE TEXT EQ 'ITCIAED '                      00166099
+                                      WHERE TEXT EQ 'ITCIARAP'                      00167099
+                                      WHERE TEXT EQ 'ITCIARD '                      00168099
+                                      WHERE TEXT EQ 'ITCIAUNQ'                      00169099
+                                      WHERE TEXT EQ 'ITCPDEI '                      00169199
+                                      WHERE TEXT EQ 'ITCPDEP '                      00169299
+                                      WHERE TEXT EQ 'ITCWSEC '                      00169399
+                                      WHERE TEXT EQ 'ITCWSMCD'                      00169499
+                                      WHERE TEXT EQ 'ITCWSMR '                      00169599
+                                      WHERE TEXT EQ 'ITCWSPN '                      00169699
+                                      WHERE TEXT EQ 'ITDE00X2'                      00169799
+                                      WHERE TEXT EQ 'IUCBT1CP'                      00169899
+                                      WHERE TEXT EQ 'IUCDBF00'                      00169999
+                                      WHERE TEXT EQ 'IUCDB1CP'                      00170099
+                                      WHERE TEXT EQ 'IUCDB100'                      00171099
+                                      WHERE TEXT EQ 'IUCIAAJR'                      00172099
+                                      WHERE TEXT EQ 'IUCPDINV'                      00173099
+                                      WHERE TEXT EQ 'IUCWSEC '                      00174099
+                                      WHERE TEXT EQ 'IUCWSLN '                      00175099
+                                      WHERE TEXT EQ 'IULDBFCS'                      00176099
+                                      WHERE TEXT EQ 'IULDBF00'                      00177099
+                                      WHERE TEXT EQ 'IULIAAJR'                      00178099
+                                      WHERE TEXT EQ 'IULIACO '                      00179099
+                                      WHERE TEXT EQ 'IULIACOP'                      00179199
+                                      WHERE TEXT EQ 'IULIACS '                      00179299
+                                      WHERE TEXT EQ 'IULIACSC'                      00179399
+                                      WHERE TEXT EQ 'IULIACSS'                      00179499
+                                      WHERE TEXT EQ 'IULIAREP'                      00179599
+                                      WHERE TEXT EQ 'IULIASJR'                      00179699
+                                      WHERE TEXT EQ 'IULIA2JR'                      00179799
+                                      WHERE TEXT EQ 'IULWSCO '                      00179899
+                                      WHERE TEXT EQ 'IULWSCP '                      00179999
+                                      WHERE TEXT EQ 'IULWSEC '                      00180099
+                                      WHERE TEXT EQ 'IULWSMR '                      00181099
+                                      WHERE TEXT EQ 'ITCIARA '                      00182099
+              BUILD ACTION LIST                                                     01190000
+              .                                                                     01200000
+
+1ENVIRONMENT  BCBS01    SYSTEM  ITS       SUBSYSTEM  ALIM
+ TYPE  FILEDESC  STAGE NUMBER 2 .
+0    ELEMENT   IULDBFCS
+            5:       *   COPY MEMBER:  IULDBFCS                                       *
+0    ELEMENT   IULDBF00
+            5:       *   COPY MEMBER:  IULDBF00                                       *00050000
+0    ELEMENT   IULIAAJR
+            5: 000500*   COPY MEMBER:  IULIAAJR                                       *00050000
+           13: 001300*                 IUCIAAJR) USED TO STORE ADJUDICATION (LINE)    *00130000
+0    ELEMENT   IULIACO
+            5: 000500*   COPY MEMBER:  IULIACO                                        *00050000
+           15: 000900*                 OVERALL LENGTH MUST MATCH IULIACOP             *00095200
+           22: 001400*                 PRIOR TO POPULATING IULIACOP.                  *00140000
+           53:       *         ADD 25-LEVEL GROUPS TO MATCH ITCIACO                   *00315700
+0    ELEMENT   IULIACOP
+            5:       *   COPY MEMBER:  IULIACOP                                       *
+           43:       *         ADD COMMENTARY; CHANGE SIZE TO MATCH IULIACO           *
+0    ELEMENT   IULIACO2
+           14:       *                 PRIOR TO POPULATING IULIACOP.                  *
+0    ELEMENT   IULIACS
+            5: 000500*   COPY MEMBER:  IULIACS                                        *00050000
+0    ELEMENT   IULIACSC
+            5:       *   COPYMEMBER:   IULIACSC                                       *
+           12:       *   FUNCTION:     STRUCTURE TO HOLD IULIACS DURING COMPRESSION   *
+0    ELEMENT   IULIACSP
+           13:       *                 (SEE IULIACSS FOR OVERLAY)                     *
+0    ELEMENT   IULIACSS
+            5:       *   COPY MEMBER:  IULIACSS                                       *
+0    ELEMENT   IULIAPJR
+           13: 001300*                 IUCIAAJR) USED TO STORE ADJUDICATION (LINE)    *00130000
+0    ELEMENT   IULIAREP
+            5: 000500*   COPY MEMBER:  IULIAREP                                       *00050002
+           14: 001400*                 IULIACS WORK CLAIM AREA IF A REPROCESS OCCURS. *00140002
+0    ELEMENT   IULIASJR
+            5:       *   COPY MEMBER:  IULIASJR                                       *00000500
+0    ELEMENT   IULIA2JR
+            5: 000500*   COPY MEMBER:  IULIA2JR                                       *00050009
+0    ELEMENT   IULWSCO
+            5:       *   COPY MEMBER:  IULWSCO                                        *
+           17:       *   FUNCTION:     STRUCTURE TO HOLD TWO LINES OF ITCIACO         *
+           34:       *         ADD 25-LEVEL GROUPS TO MATCH ITCIACO                   *
+0    ELEMENT   IULWSCP
+            5:       *   COPYMEMBER  : IULWSCP                                        *
+           14:       *                 AND ONE LINE OF ITCIACP                        *
+1    ELEMENT   IULWSEC
+            5: 000500*   COPY MEMBER:  IULWSEC                                        *00050000
+0    ELEMENT   IULWSF00
+           34:       *                                  IULIACS AND LIALM             *
+           39:       *                 AREAS CONTAINED IN IULDBF00 RECONCILIATION     *
+0    ELEMENT   IULWSF01
+           40:       *                                  IULIACS AND LIALM             *
+0    ELEMENT   IULWSJR1
+           29:        01  IUCIAAJR-OUT.
+           31:            02  IUCIAAJR.
+           32:            COPY IUCIAAJR.
+0    ELEMENT   IULWSMR
+            5:       *   COPY MEMBER:  IULWSMR                                        *
+0    ELEMENT   IULWSNM
+          231: 024800             15  LWSNM-IULDBF00-NAME                 PIC X(8)     02480005
+          232: 024900                                               VALUE 'IULDBF00'.  02490005
+0    ELEMENT   IUSPDJR2
+           21:       *                 04/30/97 - 03.0 IULIACS REPORT MODIFIED.       *
+           22:       *                                 IUCIAAJR REPORT MODIFIED.      *
+1ENVIRONMENT  BCBS01    SYSTEM  ITS       SUBSYSTEM  HPA
+ TYPE  FILEDESC  STAGE NUMBER 2 .
+0    ELEMENT   ITCIARAP
+            5:       *   COPY MEMBER:  ITCIARAP                                       *
+0    ELEMENT   IUCBT1CP
+            5:       *   COPY MEMBER:  IUCBT1CP                                       *
+0    ELEMENT   IUCDBF00
+            5:       *   COPY MEMBER:  IUCDBF00                                       *
+0    ELEMENT   IUCDB1CP
+            5:       *   COPY MEMBER:  IUCDB1CP                                       *
+0    ELEMENT   IUCDB100
+            5:       *   COPY MEMBER:  IUCDB100                                       *
+0    ELEMENT   IUCIAAJR
+            5:       *   COPY MEMBER:  IUCIAAJR                                       *
+0    ELEMENT   IUCWSEC
+            5:       *   COPY MEMBER : IUCWSEC                                        *
+0    ELEMENT   IUCWSF00
+           10: 117939*                 A - AJ     264,324 (IUCIAAJR + 1)              *
+           14:       *                 2 - CP     306,032 (ITCIACP  + 1)              *
+           15:       *                 4 - CO     383,363 (ITCIACO  + 1)              *
+0    ELEMENT   IUCWSLN
+            5:       *   COPY MEMBER:  IUCWSLN                                        *
+           41:       *                               - MODIFIED ITCIACP               *
+           69:       *         CHANGE ITCIACO OVERALL LENGTH AND LINE LENGTH          *
+0    ELEMENT   IUCWSMC
+          104:                    15  CWSMC-IUCDB100-FILE-ERROR           PIC X(6)
+0    ELEMENT   IUCWSNM
+          328: 117939*            15  CWSNM-IUCDBF00-NAME                 PIC X(8)
+          329: 117939*                                              VALUE 'IUCDBF00'.
+          330: 117939*            15  CWSNM-IUCDB100-NAME                 PIC X(8)
+          331: 117939*                                              VALUE 'IUCDB100'.
+0    ELEMENT   IUSPDLN2
+           29:       *                 USE COPY MEMBER IUCWSLN IN WORKING STORAGE     *
+1ENVIRONMENT  BCBS01    SYSTEM  ITS       SUBSYSTEM  ITS
+ TYPE  FILEDESC  STAGE NUMBER 2 .
+0    ELEMENT   ITCAPD01
+            5:       *   MODULE      : ITCAPD01                                       *00050000
+           16:       *                     ITCIACP                                    *00160000
+           17:       *                     IUCIAAJR                                   *00170000
+0    ELEMENT   ITCAPD03
+           28:       *         COPYBOOKS IUCIAAJR AND IUCIAOF; CONTINUE TO POPULATE   *00205000
+0    ELEMENT   ITCDBERD
+            4:       *                                                                *ITCDBERD
+            5:       *   COPY MEMBER:  ITCDBERD                                       *   LV001
+0    ELEMENT   ITCDBF00
+            4:       *                                                                *ITCDBF00
+            5:       *   COPY MEMBER:  ITCDBF00                                       *   LV001
+0    ELEMENT   ITCDPT13
+         2824: 250100*  DF MESSAGE CODES COPIED FROM COPYBOOK ITCWSMCD                 02696
+0    ELEMENT   ITCDPT21
+          177: 011300*  DF MESSAGE CODES COPIED FROM COPYBOOK ITCWSMCD                 00140
+0    ELEMENT   ITCIAAI
+            5:       *   COPY MEMBER:  ITCIAAI                                        *
+0    ELEMENT   ITCIACO
+            5:       *   COPY MEMBER:  ITCIACO                                        *
+0    ELEMENT   ITCIACOS
+           12:       *   FUNCTION:     COMMON PASSING AREA FOR SPECIAL ITCIACO        *
+0    ELEMENT   ITCIACP
+            5:       *   COPYMEMBER  : ITCIACP                                        *
+0    ELEMENT   ITCIAED
+            5:       *   COPYMEMBER  : ITCIAED                                        *
+0    ELEMENT   ITCIARAP
+            5:       *   COPY MEMBER:  ITCIARAP                                       *
+0    ELEMENT   ITCIARD
+            4:       *                                                                *ITCIARD
+            5:       *   COPY MEMBER:  ITCIARD                                        *   LV001
+0    ELEMENT   ITCIAUNQ
+            5:       *   COPY MEMBER:  ITCIAUNQ                                       *00050002
+0    ELEMENT   ITCPDEI
+            5: 000500*   COPYMEMBER:   ITCPDEI                                        *00050000
+0    ELEMENT   ITCPDEP
+            5: 000500*   COPYMEMBER:   ITCPDEP                                        *00050000
+0    ELEMENT   ITCWSEC
+            4:       *                                                                *ITCWSEC
+            5:       *   COPY MEMBER:  ITCWSEC                                        *   LV001
+1    ELEMENT   ITCWSF00
+           41:       *                 AREAS CONTAINED IN ITCDBF00 RECONCILIATION     *00041
+0    ELEMENT   ITCWSMCD
+            5:       *   COPY MEMBER : ITCWSMCD                                       *
+0    ELEMENT   ITCWSMR
+            4:       *                                                                *ITCWSMR
+            5:       *   COPY MEMBER:  ITCWSMR                                        *   LV001
+0    ELEMENT   ITCWSPN
+            4:       *                                                                *ITCWSPN
+            5:       *   COPY MEMBER:  ITCWSPN                                        *   LV001
+          206: 117939*            15  CWSPN-ITCDBF00-NAME                 PIC X(8)     00196
+          207: 117939*                                                VALUE 'ITCDBF00'.00197
+0    ELEMENT   ITDE00X2
+            6:       * COPY MEMBER  : ITDE00X2                                        *
+0    ELEMENT   IUCPDINV
+            5:       *   COPYMEMBER  : IUCPDINV                                       *

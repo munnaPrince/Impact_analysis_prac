@@ -1,0 +1,1311 @@
+0    ELEMENT   IULP9038
+         2799:            MOVE LIACS-IULP9220-ENTERED-IND
+0    ELEMENT   IULP9102
+          531:            PERFORM J100-CALL-IULP9346-OPEN-FILES THRU J100-EXIT.
+          563:            PERFORM J200-CALL-IULP9346-CLOSE-FILES THRU J200-EXIT.
+          605:            PERFORM J300-SETUP-IULP9112 THRU J300-EXIT.
+          687:            PERFORM J400-SETUP-IULP9346-PRE-ALIM THRU J400-EXIT.
+          758:            PERFORM J500-SETUP-IULP9346-POST-ALIM THRU J500-EXIT.
+          802:            PERFORM J600-SETUP-IULP9140-INIT THRU J600-EXIT.
+          896:            PERFORM J500-SETUP-IULP9346-POST-ALIM THRU J500-EXIT.
+          985:            MOVE       LWSNM-IULP9346-NAME             TO
+          992:            PERFORM T400-CALL-IULP9346 THRU T400-EXIT.
+         1010:            MOVE       LWSNM-IULP9346-NAME             TO
+         1017:            PERFORM T400-CALL-IULP9346 THRU T400-EXIT.
+         1035:            MOVE       LWSNM-IULP9112-NAME             TO
+         1040:            PERFORM    T300-CALL-IULP9112 THRU T300-EXIT.
+         1057:            MOVE       LWSNM-IULP9346-NAME             TO
+         1068:            PERFORM T400-CALL-IULP9346 THRU T400-EXIT.
+         1086:            MOVE       LWSNM-IULP9346-NAME             TO
+         1099:            PERFORM T400-CALL-IULP9346 THRU T400-EXIT.
+         1119:            MOVE       LWSNM-IULP9140-NAME             TO
+         1124:            PERFORM T600-CALL-IULP9140 THRU T600-EXIT.
+         1222:            CALL 'IULP9112'          USING ITSIAPC
+         1259:            CALL 'IULP9346'          USING WS-ITSIAPC
+         1335:            CALL 'IULP9140'          USING ITSIAPC
+         1701:            MOVE LWSNM-IULP9102-NAME TO
+         1706:            MOVE LWSNM-IULP9102-NAME TO
+0    ELEMENT   IULP9112
+1    ELEMENT   IULP9140
+          809:               PERFORM B200-START-CALL-IULP9146
+          814:               PERFORM B300-START-CALL-IULP9142
+          843:               PERFORM B400-START-CALL-IULP9144
+          881:            PERFORM J200-SETUP-FOR-CALL-IULP9146.
+          894:            PERFORM J300-SETUP-FOR-CALL-IULP9142.
+          907:            PERFORM J400-SETUP-FOR-CALL-IULP9144.
+         1236:            MOVE LWSNM-IULP9102-NAME         TO
+         1265:            MOVE LWSNM-IULP9146-NAME         TO
+         1274:            MOVE LWSNM-IULP9146-NAME         TO
+         1277:            PERFORM T200-CALL-IULP9146.
+         1289:            MOVE LWSNM-IULP9142-NAME         TO
+         1298:            MOVE LWSNM-IULP9142-NAME         TO
+         1301:            PERFORM T300-CALL-IULP9142.
+         1313:            MOVE LWSNM-IULP9144-NAME         TO
+         1322:            MOVE LWSNM-IULP9144-NAME         TO
+         1325:            PERFORM T400-CALL-IULP9144.
+         1390:            CALL 'IULP9146'          USING ITSIAPC
+         1404:            CALL 'IULP9142'          USING ITSIAPC
+         1422:            CALL 'IULP9144'          USING ITSIAPC
+         1486:                     PERFORM C520-PREP-AND-CALL-IULP9148
+         1549:            PERFORM D400-START-CALL-IULP9147-SAVE.
+         1557:            PERFORM J510-SETUP-FOR-CALL-IULP9147.
+         1562:            MOVE LWSNM-IULP9147-NAME         TO
+         1569:            MOVE LWSNM-IULP9147-NAME         TO
+         1571:            PERFORM T510-CALL-IULP9147.
+         1579:            CALL 'IULP9147'          USING ITSIAPC
+         1633:            PERFORM E100-START-CALL-IULP9149.
+         1641:            PERFORM J500-SETUP-FOR-CALL-IULP9149.
+         1646:            MOVE LWSNM-IULP9149-NAME         TO
+         1653:            MOVE LWSNM-IULP9149-NAME         TO
+         1655:            PERFORM T500-CALL-IULP9149.
+         1663:            CALL 'IULP9149'          USING ITSIAPC
+         1672:            PERFORM D500-START-CALL-IULP9148.
+         1680:            PERFORM J600-SETUP-FOR-CALL-IULP9148.
+         1686:            MOVE LWSNM-IULP9148-NAME         TO
+         1693:            MOVE LWSNM-IULP9148-NAME         TO
+         1695:            PERFORM T600-CALL-IULP9148.
+         1703:            CALL 'IULP9148'          USING ITSIAPC
+         1714:            PERFORM D400-START-CALL-IULP9147-REST.
+         1722:            PERFORM J510-SETUP-FOR-CALL-IULP9147.
+0    ELEMENT   IULP9142
+0    ELEMENT   IULP9144
+0    ELEMENT   IULP9146
+          186:            PERFORM J100-SETUP-FOR-CALL-ITCP9248.
+          188:            PERFORM T100-CALL-ITCP9248.
+          255:            MOVE       CWSPN-ITCP9248-NAME             TO
+          321:            CALL 'ITCP9248'          USING  ITSIAPC
+0    ELEMENT   IULP9147
+0    ELEMENT   IULP9148
+0    ELEMENT   IULP9149
+0    ELEMENT   IULP9160
+1         329:                MOVE       LWSNM-IULP9188-NAME             TO
+          360:            CALL 'IULP9188'          USING ITSIAPC
+0    ELEMENT   IULP9188
+          515:            PERFORM J200-SETUP-IULP9200 THRU J200-EXIT.
+          659:            PERFORM J500-SETUP-IULP9240 THRU J500-EXIT.
+          679:            PERFORM J800-SETUP-IULP9222 THRU J800-EXIT.
+          696:            PERFORM J600-SETUP-IULP9260 THRU J600-EXIT.
+          715:            PERFORM J700-SETUP-IULP9144 THRU J700-EXIT.
+          880:            MOVE LWSNM-IULP9200-NAME TO WS-REQUESTED-MODULE.
+          884:            PERFORM T200-CALL-IULP9200 THRU T200-EXIT.
+          930:            MOVE LWSNM-IULP9240-NAME TO WS-REQUESTED-MODULE.
+          934:            PERFORM T500-CALL-IULP9240 THRU T500-EXIT.
+          949:            MOVE LWSNM-IULP9260-NAME TO WS-REQUESTED-MODULE.
+          953:            PERFORM T600-CALL-IULP9260 THRU T600-EXIT.
+          966:            MOVE LWSNM-IULP9144-NAME TO WS-REQUESTED-MODULE.
+          970:            PERFORM T700-CALL-IULP9144 THRU T700-EXIT.
+          983:            MOVE LWSNM-IULP9222-NAME TO WS-REQUESTED-MODULE.
+          987:            PERFORM T800-CALL-IULP9222 THRU T800-EXIT.
+         1086:            CALL 'IULP9200'          USING ITSIAPC
+         1186:            CALL 'IULP9240'          USING ITSIAPC
+         1245:            CALL 'IULP9260'          USING ITSIAPC,
+         1263:            CALL 'IULP9144'          USING ITSIAPC,
+         1292:            CALL 'IULP9222'          USING ITSIAPC,
+0    ELEMENT   IULP9200
+0    ELEMENT   IULP9202
+          295:            PERFORM J100-SETUP-IULP9212.
+          300:            PERFORM J150-SETUP-IULP9214.
+          305:            PERFORM J100-SETUP-IULP9226.
+          310:            PERFORM J100-SETUP-IULP9224.
+          315:            PERFORM J150-SETUP-IULP9228.
+          321:            MOVE LWSNM-IULP9212-NAME TO WS-REQUESTED-MODULE.
+          322:            PERFORM T100-CALL-IULP9212.
+          328:            MOVE LWSNM-IULP9214-NAME TO WS-REQUESTED-MODULE.
+          329:            PERFORM T150-CALL-IULP9214.
+          335:            MOVE LWSNM-IULP9226-NAME TO WS-REQUESTED-MODULE.
+          336:            PERFORM T100-CALL-IULP9226.
+          342:            MOVE LWSNM-IULP9224-NAME TO WS-REQUESTED-MODULE.
+          343:            PERFORM T100-CALL-IULP9224.
+          349:            MOVE LWSNM-IULP9228-NAME TO WS-REQUESTED-MODULE.
+          350:            PERFORM T150-CALL-IULP9228.
+          358:            CALL 'IULP9212'          USING ITSIAPC
+          378:            CALL 'IULP9214'          USING ITSIAPC
+          398:            CALL 'IULP9226'          USING ITSIAPC
+          418:            CALL 'IULP9224'          USING ITSIAPC
+          438:            CALL 'IULP9228'          USING ITSIAPC
+0    ELEMENT   IULP9210
+          184:            PERFORM B100-SETUP-IULP9216.
+          186:            PERFORM B200-CALL-IULP9216.
+          189:               PERFORM B300-SETUP-IULP9230
+          191:               PERFORM B400-CALL-IULP9230
+          210:            MOVE       LWSNM-IULP9216-NAME             TO
+          219:            CALL 'IULP9216'          USING ITSIAPC
+          239:            MOVE       LWSNM-IULP9230-NAME             TO
+          248:            CALL 'IULP9230'          USING ITSIAPC
+0    ELEMENT   IULP9212
+          655:                   MOVE LWSNM-IULP9212-NAME TO
+          659:                   MOVE LWSNM-IULP9212-NAME   TO
+0    ELEMENT   IULP9214
+          610:                   MOVE LWSNM-IULP9214-NAME TO
+          614:                   MOVE LWSNM-IULP9214-NAME   TO
+0    ELEMENT   IULP9216
+          235:            MOVE ZERO TO LIACS-IULP9220-ENTERED-IND.
+          260:                      PERFORM B100-SETUP-IULP9218
+          261:                      PERFORM B200-CALL-IULP9218
+          268:                         PERFORM B100-SETUP-IULP9218
+          269:                         PERFORM B200-CALL-IULP9218
+          271:                         PERFORM B300-SETUP-IULP9220
+          272:                         PERFORM B400-CALL-IULP9220
+          299:                       PERFORM B500-SPECIAL-INIT-IULP9218
+          300:                       PERFORM B100-SETUP-IULP9218
+          301:                       PERFORM B200-CALL-IULP9218
+          315:                       PERFORM B300-SETUP-IULP9220
+          316:                       PERFORM B400-CALL-IULP9220
+          319:                PERFORM B300-SETUP-IULP9220
+          320:                PERFORM B400-CALL-IULP9220.
+          338:            MOVE       LWSNM-IULP9218-NAME             TO
+          348:            CALL 'IULP9218'          USING ITSIAPC
+          392:                PERFORM B250-SPECIAL-INIT-IULP9220.
+          395:            MOVE       LWSNM-IULP9220-NAME             TO
+          405:            CALL 'IULP9220'          USING ITSIAPC
+          523:                   MOVE LWSNM-IULP9216-NAME TO
+          527:                   MOVE LWSNM-IULP9216-NAME   TO
+0    ELEMENT   IULP9218
+0    ELEMENT   IULP9220
+1    ELEMENT   IULP9222
+0    ELEMENT   IULP9224
+          573:                   MOVE LWSNM-IULP9224-NAME TO
+          577:                   MOVE LWSNM-IULP9224-NAME   TO
+0    ELEMENT   IULP9226
+          574:                   MOVE LWSNM-IULP9226-NAME TO
+          578:                   MOVE LWSNM-IULP9226-NAME   TO
+0    ELEMENT   IULP9228
+          577:                   MOVE LWSNM-IULP9228-NAME TO
+          581:                   MOVE LWSNM-IULP9228-NAME   TO
+0    ELEMENT   IULP9230
+0    ELEMENT   IULP9240
+          535:            PERFORM J100-SETUP-IULP9242 THRU J100-EXIT.
+          688:            MOVE       LWSNM-IULP9242-NAME             TO
+          693:            PERFORM    T100-CALL-IULP9242 THRU T100-EXIT.
+          863:            CALL 'IULP9242'          USING ITSIAPC
+1    ELEMENT   IULP9242
+0    ELEMENT   IULP9246
+0    ELEMENT   IULP9260
+0    ELEMENT   IULP9270
+          327:            PERFORM J200-SETUP-IULP9284.
+          335:            PERFORM J300-SETUP-IULP9286.
+          374:            PERFORM J600-SETUP-IULP9292.
+          386:            PERFORM J700-SETUP-IULP9294.
+          416:            MOVE LWSNM-IULP9284-NAME TO WS-REQUESTED-MODULE.
+          418:            PERFORM T200-CALL-IULP9284.
+          425:            MOVE LWSNM-IULP9286-NAME TO WS-REQUESTED-MODULE.
+          427:            PERFORM T300-CALL-IULP9286.
+          443:            MOVE LWSNM-IULP9292-NAME TO WS-REQUESTED-MODULE.
+          445:            PERFORM T600-CALL-IULP9292.
+          452:            MOVE LWSNM-IULP9294-NAME TO WS-REQUESTED-MODULE.
+          454:            PERFORM T700-CALL-IULP9294.
+          479:            CALL 'IULP9284'          USING ITSIAPC
+          492:            CALL 'IULP9286'          USING ITSIAPC
+          559:            CALL 'IULP9292'          USING ITSIAPC
+          570:            CALL 'IULP9294'          USING ITSIAPC
+0    ELEMENT   IULP9272
+          267:            PERFORM J100-SETUP-IULP9274.
+          272:            PERFORM J150-SETUP-IULP9276.
+          277:            PERFORM J100-SETUP-IULP9280.
+          282:            PERFORM J100-SETUP-IULP9278.
+          287:            PERFORM J150-SETUP-IULP9282.
+          293:            MOVE LWSNM-IULP9274-NAME TO WS-REQUESTED-MODULE.
+          294:            PERFORM T100-CALL-IULP9274.
+          300:            MOVE LWSNM-IULP9276-NAME TO WS-REQUESTED-MODULE.
+          301:            PERFORM T150-CALL-IULP9276.
+1         307:            MOVE LWSNM-IULP9280-NAME TO WS-REQUESTED-MODULE.
+          308:            PERFORM T100-CALL-IULP9280.
+          314:            MOVE LWSNM-IULP9278-NAME TO WS-REQUESTED-MODULE.
+          315:            PERFORM T100-CALL-IULP9278.
+          321:            MOVE LWSNM-IULP9282-NAME TO WS-REQUESTED-MODULE.
+          322:            PERFORM T150-CALL-IULP9282.
+          330:            CALL 'IULP9274'          USING ITSIAPC
+          350:            CALL 'IULP9276'          USING ITSIAPC
+          370:            CALL 'IULP9280'          USING ITSIAPC
+          390:            CALL 'IULP9278'          USING ITSIAPC
+          410:            CALL 'IULP9282'          USING ITSIAPC
+0    ELEMENT   IULP9274
+          549:                   MOVE LWSNM-IULP9274-NAME TO
+          553:                   MOVE LWSNM-IULP9274-NAME   TO
+0    ELEMENT   IULP9276
+          551:                   MOVE LWSNM-IULP9276-NAME TO
+          555:                   MOVE LWSNM-IULP9276-NAME   TO
+0    ELEMENT   IULP9278
+          537:                   MOVE LWSNM-IULP9278-NAME TO
+          541:                   MOVE LWSNM-IULP9278-NAME   TO
+0    ELEMENT   IULP9280
+          547:                   MOVE LWSNM-IULP9280-NAME TO
+          551:                   MOVE LWSNM-IULP9280-NAME   TO
+0    ELEMENT   IULP9282
+          555:                   MOVE LWSNM-IULP9282-NAME TO
+          559:                   MOVE LWSNM-IULP9282-NAME   TO
+0    ELEMENT   IULP9284
+0    ELEMENT   IULP9286
+          169:            PERFORM B100-SETUP-IULP9288.
+          171:            PERFORM B200-CALL-IULP9288.
+          174:               PERFORM B300-SETUP-IULP9290
+          176:               PERFORM B400-CALL-IULP9290
+          195:            MOVE LWSNM-IULP9288-NAME
+          209:            CALL 'IULP9288'          USING ITSIAPC
+          221:            MOVE LWSNM-IULP9290-NAME
+          235:            CALL 'IULP9290'          USING ITSIAPC
+          272:                   MOVE LWSNM-IULP9286-NAME TO
+          276:                   MOVE LWSNM-IULP9286-NAME   TO
+0    ELEMENT   IULP9288
+0    ELEMENT   IULP9290
+          222:            PERFORM B200-SETUP-IULP9230.
+          223:            PERFORM B300-CALL-IULP9230.
+          458:            MOVE       LWSNM-IULP9230-NAME             TO
+1         466:            CALL 'IULP9230'          USING ITSIAPC
+          504:                   MOVE LWSNM-IULP9290-NAME TO
+          508:                   MOVE LWSNM-IULP9290-NAME   TO
+0    ELEMENT   IULP9292
+          283:                   MOVE LWSNM-IULP9292-NAME TO
+          287:                   MOVE LWSNM-IULP9292-NAME   TO
+0    ELEMENT   IULP9294
+0    ELEMENT   IULP9300
+          461:               PERFORM B100-START-CALL-IULP9350
+          464:                  PERFORM B200-START-CALL-IULP9354
+          483:               PERFORM B100-START-CALL-IULP9350
+          490:                  PERFORM B200-START-CALL-IULP9354
+          509:               PERFORM B300-START-CALL-IULP9364
+          535:            PERFORM J100-SETUP-FOR-CALL-IULP9350.
+          563:            PERFORM J200-SETUP-FOR-CALL-IULP9354.
+          576:            PERFORM J300-SETUP-FOR-CALL-IULP9364.
+          644:            MOVE LWSNM-IULP9350-NAME         TO
+          653:            MOVE LWSNM-IULP9350-NAME         TO
+          656:            PERFORM T100-CALL-IULP9350.
+          692:            MOVE LWSNM-IULP9354-NAME         TO
+          701:            MOVE LWSNM-IULP9354-NAME         TO
+          704:            PERFORM T200-CALL-IULP9354.
+          717:            MOVE LWSNM-IULP9364-NAME         TO
+          726:            MOVE LWSNM-IULP9364-NAME         TO
+          729:            PERFORM T300-CALL-IULP9364.
+          740:            CALL 'IULP9350'          USING ITSIAPC
+          877:            CALL 'IULP9354'          USING ITSIAPC
+          932:            CALL 'IULP9364'          USING ITSIAPC
+0    ELEMENT   IULP9304
+0    ELEMENT   IULP9308
+0    ELEMENT   IULP9346
+          628: 057500     PERFORM J100-SETUP-ITCP9732 THRU J100-EXIT.                  00057500
+          641: 058800     PERFORM J200-SETUP-IULP9490 THRU J200-EXIT.                  00058800
+          661: 060900     PERFORM J100-SETUP-ITCP9732 THRU J100-EXIT.                  00060900
+          674: 062200     PERFORM J200-SETUP-IULP9490 THRU J200-EXIT.                  00062200
+          955: 090400     PERFORM J100-SETUP-ITCP9732 THRU J100-EXIT.                  00090400
+         1314: 124300     PERFORM J200-SETUP-IULP9490 THRU J200-EXIT.                  00124300
+         1337: 126700     PERFORM J100-SETUP-ITCP9732 THRU J100-EXIT.                  00126700
+         1360: 129100     PERFORM J100-SETUP-ITCP9732 THRU J100-EXIT.                  00129100
+         1397: 132900     PERFORM J100-SETUP-ITCP9732 THRU J100-EXIT.                  00132900
+         1420: 135300     PERFORM J200-SETUP-IULP9490 THRU J200-EXIT.                  00135300
+         1443: 137700     PERFORM J200-SETUP-IULP9490 THRU J200-EXIT.                  00137700
+         1466: 140100     PERFORM J200-SETUP-IULP9490 THRU J200-EXIT.                  00140100
+         1489: 142500     PERFORM J200-SETUP-IULP9490 THRU J200-EXIT.                  00142500
+         1858:                MOVE CWSPN-ITCP9732-NAME TO WS-REQUESTED-MODULE
+         1859: 177500         PERFORM J101-SETUP-ITCP9732 THRU J101-EXIT               00177500
+         1863:                    MOVE CWSPN-ITCP9732-NAME TO WS-REQUESTED-MODULE
+         1864: 178000             PERFORM J102-SETUP-ITCP9732 THRU J102-EXIT           00178000
+         1868:                        MOVE CWSPN-ITCP9732-NAME TO WS-REQUESTED-MODULE
+         1869: 178500                 PERFORM J103-SETUP-ITCP9732 THRU J103-EXIT       00178500
+         1879: 179500     PERFORM T100-CALL-ITCP9732 THRU T100-EXIT.                   00179500
+         1893: 180900     PERFORM T101-CALL-ITCP9732 THRU T101-EXIT.                   00180900
+1        1907: 182300     PERFORM T102-CALL-ITCP9732 THRU T102-EXIT.                   00182300
+         1923:                MOVE LWSNM-IULP9490-NAME TO WS-REQUESTED-MODULE
+         1924: 184000         PERFORM J201-SETUP-IULP9490 THRU J201-EXIT               00184000
+         1927:                    MOVE LWSNM-IULP9490-NAME TO WS-REQUESTED-MODULE
+         1928: 184400             PERFORM J202-SETUP-IULP9490 THRU J202-EXIT           00184400
+         1931:                        MOVE LWSNM-IULP9490-NAME TO WS-REQUESTED-MODULE
+         1932: 184800                 PERFORM J203-SETUP-IULP9490 THRU J203-EXIT       00184800
+         1940: 185600     PERFORM T200-CALL-IULP9490 THRU T200-EXIT.                   00185600
+         1949: 186500     PERFORM T201-CALL-IULP9490 THRU T201-EXIT.                   00186500
+         1958: 187400     PERFORM T202-CALL-IULP9490 THRU T202-EXIT.                   00187400
+         2028: 127000     CALL 'ITCP9732'          USING ITSIAPC                       12700002
+         2100:            CALL 'IULP9490'          USING ITSIAPC                       13270002
+0    ELEMENT   IULP9350
+          496:               PERFORM B150-START-CALL-IULP9304
+          504:               PERFORM B250-START-CALL-IULP9308
+          575:            PERFORM J150-SETUP-FOR-CALL-IULP9304.
+          603:            PERFORM J250-SETUP-FOR-CALL-IULP9308.
+         1238:            MOVE LWSNM-IULP9304-NAME         TO
+         1245:            MOVE LWSNM-IULP9304-NAME         TO
+         1248:            PERFORM T150-CALL-IULP9304.
+         1280:            MOVE LWSNM-IULP9308-NAME         TO
+         1287:            MOVE LWSNM-IULP9308-NAME         TO
+         1290:            PERFORM T250-CALL-IULP9308.
+         1308:            MOVE LWSNM-IULP9102-NAME         TO
+         1347:            CALL 'IULP9304'          USING ITSIAPC
+         1378:            CALL 'IULP9308'          USING ITSIAPC
+0    ELEMENT   IULP9352
+          470:            PERFORM B100-START-CALL-IULP9356.
+          474:               PERFORM B150-START-CALL-IULP9358
+          482:               PERFORM B250-START-CALL-IULP9362
+          504:            PERFORM J100-SETUP-FOR-CALL-IULP9356.
+          517:            PERFORM J150-SETUP-FOR-CALL-IULP9358.
+1         548:            PERFORM J250-SETUP-FOR-CALL-IULP9362.
+          976:            MOVE LWSNM-IULP9356-NAME         TO
+          983:            MOVE LWSNM-IULP9356-NAME         TO
+          986:            PERFORM T100-CALL-IULP9356.
+          998:            MOVE LWSNM-IULP9358-NAME         TO
+         1005:            MOVE LWSNM-IULP9358-NAME         TO
+         1008:            PERFORM T150-CALL-IULP9358.
+         1042:            MOVE LWSNM-IULP9362-NAME         TO
+         1049:            MOVE LWSNM-IULP9362-NAME         TO
+         1052:            PERFORM T250-CALL-IULP9362.
+         1071:            MOVE LWSNM-IULP9102-NAME         TO
+         1092:            CALL 'IULP9356'          USING ITSIAPC
+         1107:            CALL 'IULP9358'          USING ITSIAPC
+         1147:            CALL 'IULP9362'          USING ITSIAPC
+0    ELEMENT   IULP9354
+          528:            MOVE LWSNM-IULP9102-NAME         TO
+0    ELEMENT   IULP9356
+0    ELEMENT   IULP9358
+0    ELEMENT   IULP9360
+0    ELEMENT   IULP9362
+0    ELEMENT   IULP9364
+          308:            PERFORM B100-START-CALL-IULP9366.
+          312:               PERFORM B150-START-CALL-IULP9368
+          316:               PERFORM B200-START-CALL-IULP9370
+          329:            PERFORM J100-SETUP-FOR-CALL-IULP9366.
+          338:            PERFORM J150-SETUP-FOR-CALL-IULP9368.
+          349:            PERFORM J200-SETUP-FOR-CALL-IULP9370.
+          365:            MOVE LWSNM-IULP9366-NAME         TO
+          374:            MOVE LWSNM-IULP9366-NAME         TO
+          377:            PERFORM T100-CALL-IULP9366.
+          387:            MOVE LWSNM-IULP9368-NAME         TO
+          396:            MOVE LWSNM-IULP9368-NAME         TO
+          399:            PERFORM T150-CALL-IULP9368.
+          409:            MOVE LWSNM-IULP9370-NAME         TO
+          418:            MOVE LWSNM-IULP9370-NAME         TO
+          421:            PERFORM T200-CALL-IULP9370.
+          429:            CALL 'IULP9366'          USING ITSIAPC
+          441:            CALL 'IULP9368'          USING
+          457:            CALL 'IULP9370'          USING
+0    ELEMENT   IULP9366
+0    ELEMENT   IULP9368
+0    ELEMENT   IULP9370
+          294:            MOVE LWSNM-IULP9102-NAME         TO
+0    ELEMENT   IULP9490
+0    ELEMENT   DIT9000P
+         5191: ITS90C     CALL 'IUCP9124' USING
+         5398: ITS90C           STRING 'CALL TO IUCP9124, DELETE CALL '
+0    ELEMENT   IUCP2002
+          832:            MOVE CWSNM-ITCP9730-NAME     TO WS-CALL-PROGRAM,
+          841:            MOVE CWSNM-IUCP2002-NAME     TO SIAPC-MODULE-NAME (1).
+          938:            PERFORM J200-SETUP-FOR-CALL-ITCP9730.
+          939:            PERFORM T200-CALL-ITCP9730.
+          941:            PERFORM U400-CHECK-ITCP9730-STATUS.
+          986:            MOVE WS-ITCP9730-ERR-CURR-TP1-SW
+          989:            MOVE WS-ITCP9730-ERR-CURR-TP2-SW
+1         992:            MOVE WS-ITCP9730-ERR-CURR-TP3-SW
+          995:            MOVE WS-ITCP9730-ERR-CURR-TP4-SW
+          998:            MOVE WS-ITCP9730-ERR-CURR-TP5-SW
+         1001:            MOVE WS-NO TO WS-ITCP9730-ERR-CURR-TP1-SW
+         1023:            MOVE WS-NO TO WS-ITCP9730-ERR-CURR-TP1-SW
+         1236:                MOVE WS-YES TO WS-ITCP9730-ERR-CURR-TP1-SW
+         1239:                MOVE WS-YES TO WS-ITCP9730-ERR-CURR-TP2-SW
+         1242:                MOVE WS-YES TO WS-ITCP9730-ERR-CURR-TP3-SW
+         1245:                MOVE WS-YES TO WS-ITCP9730-ERR-CURR-TP4-SW
+         1248:                MOVE WS-YES TO WS-ITCP9730-ERR-CURR-TP5-SW
+         1315:            MOVE CWSNM-IUCP2002-NAME     TO CSAPI-CALLING-PGM-ID
+0    ELEMENT   IUCP3114
+0    ELEMENT   IUCP6002
+          524:                    MOVE WS-NO TO WS-ITCP9730-PREV-ERROR-SW
+          795:            MOVE CWSNM-ITCP9730-NAME      TO WS-CALL-PROGRAM,
+          877:            PERFORM J200-SETUP-FOR-CALL-ITCP9730.
+          878:            PERFORM T200-CALL-ITCP9730.
+         1114:                MOVE WS-ITCP9730-CURR-ERROR-SW TO
+         1116:                MOVE WS-NO TO WS-ITCP9730-CURR-ERROR-SW.
+0    ELEMENT   IUCP9002
+         1709:                 MOVE CWSNM-ITCP9730-NAME TO WS-REQUESTED-MODULE
+0    ELEMENT   IUCP9010
+          601:            CALL CWSNM-ITCP9730-NAME   USING ITSIAPC,
+          624:            CALL CWSNM-ITCP9730-NAME   USING ITSIAPC,
+          651:            CALL CWSNM-ITCP9730-NAME   USING ITSIAPC,
+          672:            CALL CWSNM-ITCP9730-NAME   USING ITSIAPC,
+          692:            CALL CWSNM-ITCP9730-NAME   USING ITSIAPC,
+0    ELEMENT   IUCP9018
+         1043:            MOVE CWSNM-IUCP9018-NAME TO CIAAJR-LAST-OPERATOR-ID.         10120000
+         1432:            MOVE CWSNM-IUCP9018-NAME TO CSAPI-CALLING-PGM-ID.            14840000
+         1451:            MOVE CWSNM-IUCP9018-NAME TO SIAPC-MODULE-NAME (1).           15050000
+0    ELEMENT   IUCP9038
+         2687:            MOVE LIACS-IULP9220-ENTERED-IND
+         4050: 142020           MOVE 'ITCP9730'    TO WS-REQUESTED-MODULE
+0    ELEMENT   IUCP9092
+0    ELEMENT   IUCP9102
+          839:            PERFORM  J160-SETUP-FOR-CALL-IUCP9150.
+          856:            PERFORM  J170-SETUP-FOR-CALL-IUCP9152.
+          965:            PERFORM J110-SETUP-FOR-CALL-IUCP9124.
+         1051:            MOVE     CWSNM-IUCP9124-NAME          TO
+         1106:            MOVE       CWSNM-IUCP9150-NAME        TO
+         1109:            MOVE       CWSNM-IUCP9150-NAME        TO
+         1115:            MOVE       CWSNM-IUCP9150-NAME        TO
+         1118:            PERFORM    T200-CALL-IUCP9150.
+         1134:            MOVE       CWSNM-IUCP9152-NAME        TO
+         1137:            MOVE       CWSNM-IUCP9152-NAME        TO
+         1143:            MOVE       CWSNM-IUCP9152-NAME        TO
+         1146:            PERFORM    T300-CALL-IUCP9152.
+         1351:            CALL 'IUCP9150'          USING ITSIAPC
+         1417:            CALL 'IUCP9152'          USING ITSIAPC
+0    ELEMENT   IUCP9104
+         1151:            MOVE     CWSNM-ITCP9248-NAME          TO
+         1158:            MOVE     CWSNM-ITCP9248-NAME          TO
+         1161:            PERFORM  TA-CALL-ITCP9248.
+         1293:            CALL 'ITCP9248'          USING  ITSIAPC
+0    ELEMENT   IUCP9108
+0    ELEMENT   IUCP9112
+         2566:            MOVE     CWSNM-ITCP9248-NAME          TO
+         2573:            MOVE     CWSNM-ITCP9248-NAME          TO
+         2579:            PERFORM  T100-CALL-ITCP9248.
+         4172:            CALL 'ITCP9248'          USING  ITSIAPC
+0    ELEMENT   IUCP9116
+         1404:            PERFORM JA-SET-UP-CALL-IUCP9118
+         1408:            PERFORM YA100-CALL-IUCP9118
+         1419:            PERFORM JB-SET-UP-CALL-IUCP9120
+         1424:            PERFORM YA200-CALL-IUCP9120
+         1436:            PERFORM JC-SET-UP-CALL-IUCP9122.
+         1439:            PERFORM YA300-CALL-IUCP9122.
+         1585:            MOVE CWSNM-IUCP9118-NAME TO WS-REQUESTED-MODULE
+         1589:            MOVE CWSNM-IUCP9118-NAME TO
+         1598:            MOVE CWSNM-IUCP9120-NAME TO WS-REQUESTED-MODULE
+         1602:            MOVE CWSNM-IUCP9120-NAME TO
+         1611:            MOVE CWSNM-IUCP9122-NAME TO WS-REQUESTED-MODULE
+         1615:            MOVE CWSNM-IUCP9122-NAME TO
+         2153: TRIGON     CALL 'IUCP9118'          USING                               18976000
+         2242:            CALL 'IUCP9122'          USING                               19525000
+         2298:            CALL 'IUCP9120'          USING                               19775000
+0    ELEMENT   IUCP9118
+0    ELEMENT   IUCP9120
+0    ELEMENT   IUCP9122
+1    ELEMENT   IUCP9124
+          915:                PERFORM C350-CALL-ITCP9732
+         1278:                PERFORM C350-CALL-ITCP9732
+         1480:                        MOVE CWSEC-SEVERE-SYS-ERR-IUCP9124
+         1498:            MOVE CWSNM-IUCP9180-NAME TO WS-REQUESTED-MODULE.
+         1697:                            MOVE CWSEC-SEVERE-SYS-ERR-IUCP9124
+         1754:                            MOVE CWSEC-SEVERE-SYS-ERR-IUCP9124
+         1813:                          MOVE CWSEC-SEVERE-SYS-ERR-IUCP9124
+         1878:                          MOVE CWSEC-SEVERE-SYS-ERR-IUCP9124
+         1914:                   MOVE CWSEC-SEVERE-SYS-ERR-IUCP9124
+         1920:                   MOVE CWSEC-SEVERE-SYS-ERR-IUCP9124
+         1950:                   MOVE CWSEC-SEVERE-SYS-ERR-IUCP9124
+         1995:                       MOVE CWSEC-SEVERE-SYS-ERR-IUCP9124
+         2095:                PERFORM C350-CALL-ITCP9732.
+         2143:            PERFORM C350-CALL-ITCP9732.
+         2635:            MOVE CWSNM-ITCP9732-NAME TO WS-REQUESTED-MODULE.
+         2642:            PERFORM T600-CALL-ITCP9732.
+         2682:            PERFORM C350-CALL-ITCP9732.
+0    ELEMENT   IUCP9130
+0    ELEMENT   IUCP9132
+         4127:                        MOVE CWSEC-SEVERE-SYS-ERR-IUCP9132 TO
+1    ELEMENT   IUCP9134
+0    ELEMENT   IUCP9150
+         2234:                PERFORM  J230-SETUP-FOR-CALL-IUCP9134
+         4001:            PERFORM  J060-SETUP-FOR-CALL-IUCP9132.
+         4024:            PERFORM  J060-SETUP-FOR-CALL-IUCP9132.
+         4095:            PERFORM  J090-SETUP-FOR-CALL-IUCP9104.
+         4359:            PERFORM J080-SETUP-FOR-CALL-ITCP9700.
+         4406:            PERFORM  J150-SETUP-FOR-CALL-ITCP9248.
+         4442:                PERFORM  J140-SETUP-FOR-CALL-IUCP9112
+         4447:                PERFORM  J260-SETUP-FOR-CALL-IUCP9164.
+         5003:            PERFORM  J230-SETUP-FOR-CALL-IUCP9134.
+         6795:            PERFORM    J120-SETUP-FOR-CALL-IUCP9108.
+         8288:            MOVE       CWSNM-IUCP9132-NAME        TO
+         8361:            MOVE       CWSNM-ITCP9700-NAME        TO
+         8438:            MOVE       CWSNM-IUCP9104-NAME        TO
+         8559:            MOVE       CWSNM-IUCP9108-NAME        TO
+         8640:            MOVE       CWSNM-IUCP9112-NAME        TO
+         8733:            MOVE       CWSNM-ITCP9248-NAME        TO
+         8916:            MOVE     CWSNM-IUCP9124-NAME          TO
+         9039:            MOVE       CWSNM-IUCP9134-NAME        TO
+         9176:            MOVE       CWSNM-IUCP9164-NAME        TO
+         9345:            MOVE       CWSNM-IUCP9150-NAME        TO
+         9393:            PERFORM  J190-SETUP-FOR-CALL-IUCP9124.
+         0200:                MOVE   CWSEC-SEVERE-SYS-ERR-IUCP9150   TO
+         0220:                MOVE   CWSEC-SEVERE-SYS-ERR-IUCP9104   TO
+         0230:                MOVE   CWSEC-SEVERE-SYS-ERR-IUCP9108   TO
+         0240:                MOVE   CWSEC-SEVERE-SYS-ERR-IUCP9112   TO
+         0255:                MOVE   CWSEC-SEVERE-SYS-ERR-IUCP9118   TO
+         0260:                MOVE   CWSEC-SEVERE-SYS-ERR-IUCP9120   TO
+         0265:                MOVE   CWSEC-SEVERE-SYS-ERR-IUCP9122   TO
+         0270:                MOVE   CWSEC-SEVERE-SYS-ERR-IUCP9124   TO
+         0280:                MOVE   CWSEC-SEVERE-SYS-ERR-IUCP9132   TO
+         0338:                MOVE   CWSEC-SEVERE-SYS-ERR-ITCP9700   TO
+         0599:                MOVE CWSNM-IUCP9150-NAME                    TO
+         0613:                MOVE CWSNM-IUCP9150-NAME                    TO
+         0627:                MOVE CWSNM-IUCP9150-NAME                    TO
+         0641:                MOVE CWSNM-IUCP9150-NAME                    TO
+         0659:                MOVE CWSNM-IUCP9150-NAME                    TO
+         1832:            MOVE       CWSEC-SEVERE-SYS-ERR-IUCP9150 TO
+         1838:            PERFORM    F260-SEVERE-LOG-SETUP-IUCP9150.
+0    ELEMENT   IUCP9152
+         3077: 020490         PERFORM  J210-SETUP-FOR-CALL-IUCP9134                    00020490
+         4907:            PERFORM    N500-SETUP-FOR-CALL-IUCP9124.
+         4977:            PERFORM  J050-SETUP-FOR-CALL-IUCP9132.
+         5022:            PERFORM  J050-SETUP-FOR-CALL-IUCP9132.
+         5437:            PERFORM J070-SETUP-FOR-CALL-ITCP9700.
+         5517:                PERFORM  J120-SETUP-FOR-CALL-IUCP9112
+         5522:                PERFORM  J230-SETUP-FOR-CALL-IUCP9164.
+1        5828:            PERFORM  J210-SETUP-FOR-CALL-IUCP9134.
+         7676:            PERFORM    J110-SETUP-FOR-CALL-IUCP9108.
+         0143:            MOVE       CWSNM-ITCP9248-NAME        TO
+         0147:            PERFORM    J130-SETUP-FOR-CALL-ITCP9248.
+         0442:            MOVE       CWSNM-IUCP9132-NAME        TO
+         0517:            MOVE       CWSNM-ITCP9700-NAME        TO
+         0714:            MOVE       CWSNM-IUCP9108-NAME        TO
+         0751:            MOVE       CWSNM-IUCP9112-NAME        TO
+         0827:            MOVE       CWSNM-ITCP9248-NAME        TO
+         1101:            MOVE       CWSNM-IUCP9134-NAME        TO
+         1194:            MOVE       CWSNM-IUCP9164-NAME        TO
+         1523:            MOVE       CWSNM-IUCP9152-NAME        TO
+         1562:            PERFORM  N500-SETUP-FOR-CALL-IUCP9124.
+         1984:            MOVE     CWSNM-IUCP9124-NAME          TO
+         2493:                MOVE   CWSEC-SEVERE-SYS-ERR-IUCP9152   TO
+         2503:                MOVE   CWSEC-SEVERE-SYS-ERR-IUCP9108   TO
+         2508:                MOVE   CWSEC-SEVERE-SYS-ERR-IUCP9112   TO
+         2523:                MOVE   CWSEC-SEVERE-SYS-ERR-IUCP9118   TO
+         2528:                MOVE   CWSEC-SEVERE-SYS-ERR-IUCP9120   TO
+         2533:                MOVE   CWSEC-SEVERE-SYS-ERR-IUCP9122   TO
+         2538:                MOVE   CWSEC-SEVERE-SYS-ERR-IUCP9124   TO
+         2548:                MOVE   CWSEC-SEVERE-SYS-ERR-IUCP9132   TO
+         2606:                MOVE   CWSEC-SEVERE-SYS-ERR-ITCP9700   TO
+         2780:                MOVE CWSNM-IUCP9152-NAME                    TO
+         2794:                MOVE CWSNM-IUCP9152-NAME                    TO
+         2808:                MOVE CWSNM-IUCP9152-NAME                    TO
+         2822:                MOVE CWSNM-IUCP9152-NAME                    TO
+         2840:                MOVE CWSNM-IUCP9152-NAME                    TO
+         4155:            MOVE       CWSEC-SEVERE-SYS-ERR-IUCP9152 TO
+         4158:            PERFORM    F180-SEVERE-LOG-SETUP-IUCP9152.
+0    ELEMENT   IUCP9160
+          549:                PERFORM J030-SETUP-FOR-CALL-ITCP9248
+          558:                PERFORM J060-SETUP-FOR-CALL-ITCP9700
+          567:                PERFORM J100-SETUP-FOR-CALL-IUCP9104
+          573:                PERFORM J120-SETUP-FOR-CALL-IUCP9108
+          579:                PERFORM J140-SETUP-FOR-CALL-IUCP9112
+          588:                PERFORM J170-SETUP-FOR-CALL-IUCP9124
+          594:                PERFORM J190-SETUP-FOR-CALL-IUCP9132
+          597:                PERFORM J200-SETUP-FOR-CALL-IUCP9134
+          609:                PERFORM J260-SETUP-FOR-CALL-IUCP9164
+          689:            MOVE       CWSNM-ITCP9248-NAME        TO
+          695:            MOVE       CWSNM-ITCP9248-NAME        TO
+          718:            PERFORM    T030-CALL-ITCP9248.
+          799:            MOVE       CWSNM-ITCP9700-NAME        TO
+          805:            MOVE       CWSNM-ITCP9700-NAME        TO
+          834:            PERFORM    T060-CALL-ITCP9700.
+          940:            MOVE       CWSNM-IUCP9104-NAME        TO
+          946:            MOVE       CWSNM-IUCP9104-NAME        TO
+          969:            PERFORM    T100-CALL-IUCP9104.
+         1003:            MOVE       CWSNM-IUCP9108-NAME        TO
+         1009:            MOVE       CWSNM-IUCP9108-NAME        TO
+         1018:            PERFORM    T120-CALL-IUCP9108.
+         1062:            MOVE       CWSNM-IUCP9112-NAME        TO
+         1068:            MOVE       CWSNM-IUCP9112-NAME        TO
+         1105:            PERFORM    T140-CALL-IUCP9112.
+         1192:            MOVE     CWSNM-IUCP9124-NAME          TO
+         1198:            MOVE     CWSNM-IUCP9124-NAME          TO
+         1220:            PERFORM T170-CALL-IUCP9124.
+         1251:            MOVE       CWSNM-IUCP9132-NAME        TO
+         1257:            MOVE       CWSNM-IUCP9132-NAME        TO
+         1273:            PERFORM    T190-CALL-IUCP9132.
+         1284:            MOVE       CWSNM-IUCP9134-NAME        TO
+         1290:            MOVE       CWSNM-IUCP9134-NAME        TO
+         1293:            PERFORM    T200-CALL-IUCP9134.
+         1378:            MOVE       CWSNM-IUCP9164-NAME        TO
+         1384:            MOVE       CWSNM-IUCP9164-NAME        TO
+         1387:            PERFORM    T260-CALL-IUCP9164.
+         1512:            CALL 'ITCP9248'          USING  ITSIAPC
+         1558:            CALL 'ITCP9700'          USING ITSIAPC
+1        1624:            CALL 'IUCP9104'          USING ITSIAPC
+         1657:            CALL 'IUCP9108'          USING ITSIAPC
+         1684:            CALL 'IUCP9112'          USING ITSIAPC
+         1794:            CALL 'IUCP9124'          USING ITSIAPC
+         1841:            CALL 'IUCP9132'          USING ITSIAPC
+         1863:            CALL 'IUCP9134'          USING ITSIAPC
+         1993:            CALL 'IUCP9164'          USING ITSIAPC
+0    ELEMENT   IUCP9162
+0    ELEMENT   IUCP9164
+         1987:            MOVE     CWSNM-ITCP9248-NAME          TO
+         1994:            MOVE     CWSNM-ITCP9248-NAME          TO
+         1997:            PERFORM  T100-CALL-ITCP9248.
+         3242:            CALL 'ITCP9248'          USING  ITSIAPC
+0    ELEMENT   IUCP9170
+           99:               PERFORM B100-CALL-IUCP9172.
+          110:            MOVE       CWSNM-IUCP9172-NAME        TO
+          114:            CALL 'IUCP9172'           USING ITSIAPC
+0    ELEMENT   IUCP9172
+         2021:            MOVE CWSEC-SEVERE-SYS-ERR-IUCP9172  TO
+0    ELEMENT   IUCP9180
+          298:            MOVE CWSNM-IUCP9180-NAME        TO SIAPC-MODULE-NAME(1).
+          623:            MOVE CWSNM-IUCP9180-NAME TO CSAPI-CALLING-PGM-ID.            00045400
+          734:            MOVE CWSNM-IUCP9180-NAME     TO CSAPI-CALLING-PGM-ID.
+          791:            MOVE CWSNM-IUCP9180-NAME TO CSAPI-CALLING-PGM-ID.            00056100
+1         861:            MOVE CWSNM-IUCP9180-NAME      TO CSAPI-CALLING-PGM-ID.
+0    ELEMENT   IUCP9356
+          606:                        PERFORM J300-SETUP-FOR-CALL-ITCP9358
+         1564:            MOVE       CWSPN-ITCP9358-NAME             TO
+         1576:            MOVE       CWSPN-ITCP9358-NAME             TO
+         1579:            PERFORM    T300-CALL-ITCP9358.
+         1687:            CALL 'ITCP9358'          USING ITSIAPC
+0    ELEMENT   IUCV9006
+         1659:            CALL WS-CALL-ITCP9730 USING ITSIAPC,                         03009638
+0    ELEMENT   IUCV9007
+         1782:            CALL WS-CALL-ITCP9730 USING ITSIAPC,                         03021686
+0    ELEMENT   IUCV9014
+0    ELEMENT   IUCV9108
+0    ELEMENT   ITCA0001
+         2320:            MOVE WS-ITCP9102       TO                                    18140024
+         2330:            CALL WS-ITCP9102 USING WS-ITSIAPC                            18230024
+         6122:            MOVE WS-ITCA0013       TO
+         6136:            CALL WS-ITCA0013 USING WS-ITSIAPC
+         6299:            MOVE WS-ITCA0013       TO
+         6308:            CALL WS-ITCA0013 USING WS-ITSIAPC
+         7932:            MOVE WS-ITCA0013       TO
+         7942:            CALL WS-ITCA0013 USING WS-ITSIAPC
+0    ELEMENT   ITCA0011
+          473:            MOVE    CWSNM-IUCP9134-NAME TO                               04970000
+          475:            PERFORM 7330-CALL-TO-IUCP9134.                               04990000
+          503:            MOVE    WS-ITPCA002-NAME TO                                  05320000
+          505:            PERFORM 7500-CALL-TO-ITPCA002.                               05340000
+          645: TRIGON     CALL 'ITCP9358'          USING LK-ITSIAPC                    06651001
+          670: TRIGON     CALL 'IUCP9134'          USING LK-ITSIAPC                    06881002
+          700:            CALL WS-ITPCA002-NAME    USING ITCCSAPI                      07160000
+0    ELEMENT   ITCA0012
+          559:            MOVE    CWSNM-IUCP9134-NAME TO                               05310000
+          561:            PERFORM 7330-CALL-TO-IUCP9134.                               05330000
+          696:            MOVE    CWSNM-IUCP9134-NAME TO                               06620000
+          698:            PERFORM 7330-CALL-TO-IUCP9134.                               06640000
+          871:            MOVE    CWSNM-IUCP9134-NAME TO                               08710000
+          873:            PERFORM 7330-CALL-TO-IUCP9134.                               08730000
+          956:            MOVE    WS-ITPCA002-NAME TO                                  09380000
+          958:            PERFORM 7500-CALL-TO-ITPCA002.                               09400000
+         1114: TRIGON     CALL 'ITCP9358'          USING LK-ITSIAPC                    10711000
+         1139: TRIGON     CALL 'IUCP9134'          USING LK-ITSIAPC                    10941000
+         1186:            CALL WS-ITPCA002-NAME    USING ITCCSAPI                      11380000
+0    ELEMENT   ITCA0013
+          718:            MOVE    WS-ITPCA002-NAME TO                                  07830000
+          720:            PERFORM 7200-CALL-TO-ITPCA002.                               07850000
+          767:            MOVE    WS-ITPCA003-NAME TO                                  08300000
+          769:            PERFORM 7300-CALL-TO-ITPCA003.                               08320000
+         1318:            MOVE    WS-ITPCA003-NAME TO                                  13080000
+         1320:            PERFORM 7300-CALL-TO-ITPCA003.                               13100000
+         1383:            CALL WS-ITPCA002-NAME    USING ITCCSAPI                      13630000
+         1399:            CALL WS-ITPCA003-NAME    USING ITCCSAPI                      13780000
+0    ELEMENT   ITCA0015
+          324:            MOVE    WS-ITPCA003-NAME TO                                  02970000
+          326:            PERFORM 7300-CALL-TO-ITPCA003.                               02990000
+          355:            CALL WS-ITPCA003-NAME    USING LK-ITCCSAPI                   03280000
+0    ELEMENT   ITCA9080
+         1480: 600860     MOVE WS-ITCP9102       TO                                    00101093
+         1495: 602000     CALL WS-ITCP9102 USING ITSIAPC-RECORD                        00101126
+         1504:                DISPLAY 'ITCA9080- CALL TO ITCP9102 -  2050-'
+         1526:               MOVE WS-RPT-MESSAGE-ITCP9102
+0    ELEMENT   ITCB9000
+          807:            MOVE 'ITCB9000'  TO CSAPI-CALLING-PGM-ID.                    07810000
+          892:            MOVE 'ITCB9000'              TO CB1-BLUE2-USER-ID.           08660001
+         1207:            MOVE 'ITCB9000' TO CSAPI-CALLING-PGM-ID.                     11810000
+         1288:            MOVE 'ITCB9000'  TO CSAPI-CALLING-PGM-ID.                    12610000
+         1346:            MOVE 'ITCB9000'  TO CSAPI-CALLING-PGM-ID.                    13190000
+         1412:            MOVE 'ITCB9000'  TO CSAPI-CALLING-PGM-ID.                    13850000
+         1472:            MOVE 'ITCB9000'  TO CSAPI-CALLING-PGM-ID.                    14450000
+         1627:            MOVE 'ITCB9000'  TO CSAPI-CALLING-PGM-ID.                    15960000
+         1732:            MOVE 'ITCB9000'  TO CSAPI-CALLING-PGM-ID.                    16950000
+         1783:            MOVE 'ITCB9000'  TO CSAPI-CALLING-PGM-ID.                    17460000
+         1857:            MOVE 'ITCB9000' TO SIAPC-MODULE-NAME (SIAPC-MODULE-LEVEL)    00012900
+0    ELEMENT   ITCB9006
+0    ELEMENT   ITCDB1U1
+0    ELEMENT   ITCPDLR0
+           68:            CALL WS-ITDBR0U1 USING ITCCSAPI-RECORD                       00021634
+0    ELEMENT   ITCP1172
+0    ELEMENT   ITCP2010
+          383: 025800     MOVE WS-MODULE-ITCP9102       TO SIAPC-MODULE-NAME (2)       ITCP2010
+          393: 026800     CALL WS-MODULE-ITCP9102 USING WS-PROCESS-CONTROL             ITCP2010
+0    ELEMENT   ITCP2078
+          128: 015800      MOVE 'ITCP9078'              TO  WS-CALL-PROGRAM,           00158
+0    ELEMENT   ITCP2172
+0    ELEMENT   ITCP4010
+          459: 035000     MOVE WS-ITCP9102  TO SIAPC-MODULE-NAME(SIAPC-MODULE-LEVEL).
+          472: 036200     CALL WS-ITCP9102 USING WS-ITSIAPC
+          507: 036810        MOVE '2200-CALL-ITCP9102   ' TO WS-PARAGRAPH
+0    ELEMENT   ITCP4026
+0    ELEMENT   ITCP4166
+          223:            PERFORM 9100-CALL-ITDBR0U1 THRU 9100-EXIT                    00178
+          248:            CALL WS-ITDBR0U1 USING CSAPI-HEADER-DATA                     00178
+0    ELEMENT   ITCP4426
+0    ELEMENT   ITCP9036
+         1238:               MOVE CWSPN-ITCP9730-NAME TO WS-REQUESTED-MODULE
+         1298:               MOVE CWSPN-ITCP9730-NAME TO WS-REQUESTED-MODULE
+         1403:               MOVE CWSPN-ITCP9730-NAME TO WS-REQUESTED-MODULE
+         1463:               MOVE CWSPN-ITCP9730-NAME TO WS-REQUESTED-MODULE
+0    ELEMENT   ITCP9050
+0    ELEMENT   ITCP9054
+0    ELEMENT   ITCP9056
+0    ELEMENT   ITCP9058
+0    ELEMENT   ITCP9066
+          607: 058200     PERFORM 9060-CALL-ITCP9068 THRU 9060-EXIT                    ITCP9066
+         1032: 089300     PERFORM 9060-CALL-ITCP9068 THRU 9060-EXIT                    ITCP9066
+         1580: 210500     PERFORM 9060-CALL-ITCP9068           THRU 9060-EXIT          ITCP9066
+0    ELEMENT   ITCP9068
+0    ELEMENT   ITCP9078
+          845: 018800       MOVE 'ITCP9078'  TO WS-PROG-NAME.                          00198
+          847: 019000       MOVE 'ITCP9078'  TO SIAPC-MODULE-NAME (2).                 00200
+0    ELEMENT   ITCP9102
+         1549: 656800     MOVE 'ITCP9102'               TO CSAPI-CALLING-PGM-ID.
+         1611: 657660     MOVE 'ITCP9102'               TO CSAPI-CALLING-PGM-ID.
+         1854: 660040     MOVE 'ITCP9102'               TO CSAPI-CALLING-PGM-ID.
+         2001: 665018     MOVE 'ITCP9102'               TO CSAPI-CALLING-PGM-ID.
+         2035: 771831     MOVE 'ITCP9102'               TO CSAPI-CALLING-PGM-ID.
+         2232: 149100        MOVE '      ITCP9102 - INVALID RELEASE'
+         5719: 476300     MOVE 'ITCP9102'                TO CSAPI-CALLING-PGM-ID.
+         5992: 501303     MOVE 'ITCP9102'                TO CSAPI-CALLING-PGM-ID.
+         6038: 501347     MOVE 'ITCP9102'                TO CSAPI-CALLING-PGM-ID.
+         6751: 806337     MOVE 'ITCP9102'                 TO CSAPI-CALLING-PGM-ID.
+         6796: 807448     MOVE 'ITCP9102'                 TO CSAPI-CALLING-PGM-ID.
+         7116: 807930     MOVE 'ITCP9102'                 TO CSAPI-CALLING-PGM-ID.
+         7388: 444280     MOVE 'ITCP9102'                 TO CSAPI-CALLING-PGM-ID.
+         7435: 444342     MOVE 'ITCP9102'                 TO CSAPI-CALLING-PGM-ID.
+         7483:            MOVE 'ITCP9102'                 TO CSAPI-CALLING-PGM-ID.     67470000
+         7607:            MOVE 'ITCP9102'             TO CSAPI-CALLING-PGM-ID.         68620000
+         7813: 584300     MOVE 'ITCP9102'                 TO CSAPI-CALLING-PGM-ID.     60140000
+         8098: 811423     MOVE 'ITCP9102'                 TO CSAPI-CALLING-PGM-ID.
+         8167: 572500     MOVE 'ITCP9102 - 1230-BAD READ IPP-MSG-SEARCH '              55959400
+         8201: 573700     MOVE 'ITCP9102'                 TO CSAPI-CALLING-PGM-ID.     55960600
+         8390: 812100     MOVE 'ITCP9102'         TO CSAPI-CALLING-PGM-ID.
+         8540: 813042     MOVE 'ITCP9102'          TO CSAPI-CALLING-PGM-ID.
+         8621: 504907     MOVE 'ITCP9102'                 TO CSAPI-CALLING-PGM-ID.
+         8632: 504918     MOVE 'ITCP9102'                 TO CSAPI-CALLING-PGM-ID.
+1        8647: 504933     MOVE 'ITCP9102'                 TO CSAPI-CALLING-PGM-ID.
+0    ELEMENT   ITCP9104
+0    ELEMENT   ITCP9112
+0    ELEMENT   ITCP9174
+         9674: 802900        MOVE WS-ITCP9164             TO WS-CALL-PROGRAM
+         9679: 779210            CALL 'ITCP9164'      USING                            07766
+0    ELEMENT   ITCP9178
+0    ELEMENT   ITCP9180
+0    ELEMENT   ITCP9526
+0    ELEMENT   ITCP9528
+0    ELEMENT   ITCP9556
+         1172: 021770        MOVE 'ITCP9556: 0080-CALL-ITCP9158-PGM' TO WS-PARAGRAPH   00186400
+         5813: 065020        MOVE 'ITCP9556- 6580-CALL-ITCP9158-FOR-MSG ' TO           00186400
+0    ELEMENT   ITCP9558
+         1024: 192000        MOVE 'ITCP9558: 0080-CALL-ITCP9158-PGM' TO WS-PARAGRAPH   00186400
+         2201: 298500        MOVE 'ITCP9558- 6108-BDC-PROCESS ' TO                     00186400
+         2458: 303700        MOVE 'ITCP9558- 6110-BDC-PROCESS ' TO WS-PARAGRAPH        22120000
+         2636:               MOVE 'ITCP9558/6122-BDC- ' TO WS-PARAGRAPH                23580000
+0    ELEMENT   ITCP9614
+          657: 166461        CALL WS-MODULE-ITCP9616 USING                             ITCP9614
+1         868: 166461     CALL WS-MODULE-ITCP9616 USING                                00761
+0    ELEMENT   ITCP9616
+         2441:            MOVE 'ITCP9616'     TO CSAPI-CALLING-PGM-ID.
+         2478:            MOVE 'ITCP9616'      TO CSAPI-CALLING-PGM-ID.
+         2525:            MOVE 'ITCP9616'             TO CSAPI-CALLING-PGM-ID.
+         2555:            MOVE 'ITCP9616'             TO CSAPI-CALLING-PGM-ID.
+         2581:            MOVE 'ITCP9616'             TO CSAPI-CALLING-PGM-ID.
+         2637:            MOVE 'ITCP9616'             TO CSAPI-CALLING-PGM-ID.
+         2669:            MOVE 'ITCP9616'             TO CSAPI-CALLING-PGM-ID.
+         2728:            MOVE 'ITCP9616'             TO CSAPI-CALLING-PGM-ID.
+         2768:            MOVE 'ITCP9616'             TO CSAPI-CALLING-PGM-ID.
+0    ELEMENT   ITCP9896
+0    ELEMENT   ITCP9898
+0    ELEMENT   ITDBR0U1
+0    ELEMENT   ITDCA1S1
+0    ELEMENT   ITDP01S1
+0    ELEMENT   ITDRTE00
+0    ELEMENT   ITPCA002
+0    ELEMENT   ITPCA003
+0    ELEMENT   ITPCA004
+0    ELEMENT   ITPEXBS1
+0    ELEMENT   ITPEXCS1
+0    ELEMENT   ITPP01U1
+0    ELEMENT   ITRT0001
+         2333:            MOVE 'ITCP9102'        TO
+         2347:            CALL WS-ITCP9102 USING WS-ITSIAPC-AREA
+0    ELEMENT   ITRT0002
+0    ELEMENT   WIT1500P
+0    ELEMENT   ITCP9242
+          783:            PERFORM J300-SETUP-FOR-CALL-ITCP9246.
+          797:            PERFORM J400-SETUP-FOR-CALL-ITCP9248.
+          825:            PERFORM J700-SETUP-FOR-CALL-ITCP9258.                        00080613
+          949:            PERFORM J110-SETUP-FOR-CALL-ITDRTE00.
+         1157:            PERFORM J650-SETUP-FOR-CALL-ITCP9732.                        00112900
+         1196:            MOVE WS-ITDRTE00-NAME       TO WS-REQUESTED-MODULE.
+         1202:            PERFORM T110-CALL-ITDRTE00.
+         1246:            MOVE CWSPN-ITCP9246-NAME TO WS-REQUESTED-MODULE.             00125313
+         1250:            PERFORM T300-CALL-ITCP9246.                                  00126013
+         1262:            MOVE CWSPN-ITCP9248-NAME TO WS-REQUESTED-MODULE.             00127213
+         1266:            PERFORM T400-CALL-ITCP9248.                                  00127913
+         1298:            MOVE CWSPN-ITCP9732-NAME TO WS-REQUESTED-MODULE.             00132800
+         1302:            PERFORM T650-CALL-ITCP9732.                                  00133400
+         1316:            MOVE CWSPN-ITCP9258-NAME TO WS-REQUESTED-MODULE.             00136713
+         1320:            PERFORM T700-CALL-ITCP9258.                                  00137413
+         1451:            CALL 'ITCP9246'          USING ITSIAPC
+         1468:            CALL 'ITCP9248'          USING ITSIAPC
+         1501:            CALL 'ITCP9732'          USING ITSIAPC                       00162700
+         1520:            CALL 'ITCP9258'          USING ITSIAPC
+         1563:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9242 TO WS-RSN-CD.         00168617
+         1567:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9246 TO WS-RSN-CD.         00168917
+         1571:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9248 TO WS-RSN-CD.         00169217
+         1579:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9258 TO WS-RSN-CD.         00169817
+         1583:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9286 TO WS-RSN-CD.         00170117
+         1596:                MOVE CWSEC-SEVERE-SYS-ERR-ITDRTE00 TO WS-RSN-CD.
+         1606:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9732 TO WS-RSN-CD.         00173100
+         1725:                MOVE CWSPN-ITCP9242-NAME TO                              00181017
+         1735:                MOVE CWSPN-ITCP9242-NAME TO                              01944
+         2013:            MOVE CWSPN-ITCP9242-NAME      TO CSAPI-CALLING-PGM-ID.
+0    ELEMENT   ITCP9246
+0    ELEMENT   ITCP9248
+0    ELEMENT   ITCP9250
+0    ELEMENT   ITCP9258
+         2661: 159700     MOVE       CWSPN-ITCP9286-NAME             TO                15970024
+         2667: 160300     MOVE       CWSPN-ITCP9286-NAME             TO                16030024
+         2670: 160600     PERFORM    T100-CALL-MODULE-ITCP9286.                        16060024
+         4857: 302000      CALL 'ITCP9286'        USING ITSIAPC                        30201099
+0    ELEMENT   ITCP9286
+0    ELEMENT   ITCP9356
+          273: 028900         PERFORM J300-SETUP-FOR-CALL-ITCP9358.                    ITCP9356
+          333: 034900     MOVE       CWSPN-ITCP9358-NAME             TO                ITCP9356
+          345: 036100     MOVE       CWSPN-ITCP9358-NAME             TO                ITCP9356
+          348: 036400     PERFORM    T300-CALL-ITCP9358.                               ITCP9356
+          416: 042700     CALL 'ITCP9358'          USING ITSIAPC                       ITCP9356
+0    ELEMENT   ITCP9358
+1    ELEMENT   ITCP9700
+          729:            PERFORM J100-SETUP-FOR-CALL-ITCP9242.                        00621
+          736:            PERFORM J900-SETUP-FOR-CALL-ITCP9702.                        00634
+          941:            PERFORM J650-SETUP-FOR-CALL-ITCP9732.
+          978:            MOVE CWSPN-ITCP9242-NAME    TO WS-REQUESTED-MODULE.          00855
+          986:            PERFORM T100-CALL-ITCP9242.                                  00862
+         1029: 100300     MOVE CWSPN-ITCP9732-NAME TO WS-REQUESTED-MODULE.             00958
+         1034: 101700         PERFORM T650-CALL-ITCP9732                               00968
+         1038: 102100         PERFORM T655-CALL-ITCP9732.                              00972
+         1096:            MOVE CWSPN-ITCP9702-NAME    TO WS-REQUESTED-MODULE.          00967
+         1100:            PERFORM T900-CALL-ITCP9702.                                  00974
+         1195:            CALL 'ITCP9242'          USING  ITSIAPC
+         1285:            CALL 'ITCP9702'          USING  ITSIAPC
+         1325:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9242 TO WS-RSN-CD.         01232
+         1329:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9246 TO WS-RSN-CD.         01235
+         1333:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9248 TO WS-RSN-CD.         01238
+         1346: 146500         MOVE CWSEC-SEVERE-SYS-ERR-ITDRTE00 TO WS-RSN-CD.
+         1355:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9702 TO WS-RSN-CD.         01268
+         1359:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9704 TO WS-RSN-CD.         01271
+         1367:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9708 TO WS-RSN-CD.         01277
+         1387:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9718 TO WS-RSN-CD.         01292
+         1407: 150400         MOVE CWSEC-SEVERE-SYS-ERR-ITCP9728 TO WS-RSN-CD.         01424
+         1411: 150400         MOVE CWSEC-SEVERE-SYS-ERR-ITCP9730 TO WS-RSN-CD.         01424
+         1415: 150400         MOVE CWSEC-SEVERE-SYS-ERR-ITCP9732 TO WS-RSN-CD.         01424
+         1533:                MOVE CWSPN-ITCP9700-NAME TO                              01386
+0    ELEMENT   ITCP9702
+          643:            PERFORM J400-SETUP-FOR-CALL-ITCP9704.                        00790
+          687:            PERFORM J110-SETUP-FOR-CALL-ITDRTE00.
+          727:            PERFORM J650-SETUP-FOR-CALL-ITCP9732.                        00882
+          798:            PERFORM J110-SETUP-FOR-CALL-ITDRTE00.
+         1048:            PERFORM J650-SETUP-FOR-CALL-ITCP9732.                        01118
+         1083:            MOVE WS-ITDRTE00-NAME       TO WS-REQUESTED-MODULE.
+         1089:            PERFORM T110-CALL-ITDRTE00.
+         1125:            MOVE CWSPN-ITCP9704-NAME TO WS-REQUESTED-MODULE.             01274
+         1130:            PERFORM T400-CALL-ITCP9704.                                  01281
+         1161: 100300     MOVE CWSPN-ITCP9732-NAME TO WS-REQUESTED-MODULE.             00958
+         1168: 101700         PERFORM T650-CALL-ITCP9732                               00968
+         1172: 102100         PERFORM T655-CALL-ITCP9732.                              00972
+         1321:            CALL 'ITCP9704'          USING ITSIAPC
+         1366:            CALL 'ITCP9732'          USING ITSIAPC                       00162700
+         1383:            CALL 'ITCP9732'          USING ITSIAPC                       00162700
+         1449:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9704 TO WS-RSN-CD.         01807
+         1469:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9718 TO WS-RSN-CD.         02020
+         1498:                MOVE CWSEC-SEVERE-SYS-ERR-ITDRTE00 TO WS-RSN-CD.
+         1507:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9728 TO WS-RSN-CD.         01774
+         1511:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9730 TO WS-RSN-CD.         01774
+         1515:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9732 TO WS-RSN-CD.         01774
+         1616:                MOVE CWSPN-ITCP9702-NAME TO                              01922
+0    ELEMENT   ITCP9704
+          725:            PERFORM J300-SETUP-FOR-CALL-ITCP9246.                        00779
+          756:            PERFORM J400-SETUP-FOR-CALL-ITCP9248.                        00813
+          773:            PERFORM J700-SETUP-FOR-CALL-ITCP9708.                        00830
+         1077:            MOVE CWSPN-ITCP9246-NAME TO WS-REQUESTED-MODULE.             01166
+1        1082:            PERFORM T300-CALL-ITCP9246.                                  01173
+         1133:            MOVE CWSPN-ITCP9248-NAME TO WS-REQUESTED-MODULE.             01217
+         1138:            PERFORM T400-CALL-ITCP9248.                                  01224
+         1150:            MOVE CWSPN-ITCP9708-NAME TO WS-REQUESTED-MODULE.             01239
+         1155:            PERFORM T700-CALL-ITCP9708.                                  01246
+         1485:            CALL 'ITCP9246'          USING ITSIAPC
+         1517:            CALL 'ITCP9248'          USING ITSIAPC
+         1533:            CALL 'ITCP9708'          USING ITSIAPC
+         1561:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9246 TO WS-RSN-CD.         01761
+         1564:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9248 TO WS-RSN-CD.         01764
+         1579:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9708 TO WS-RSN-CD.         01779
+         1661:                MOVE CWSPN-ITCP9704-NAME TO                              01861
+0    ELEMENT   ITCP9708
+0    ELEMENT   ITCP9710
+          524:            MOVE CWSPN-ITCP9286-NAME  TO
+          530:            MOVE CWSPN-ITCP9286-NAME  TO
+          533:            PERFORM T100-CALL-MODULE-ITCP9286.
+0    ELEMENT   ITCP9712
+          359:            PERFORM J200-SETUP-FOR-CALL-ITCP9718.                        00508
+          539:            MOVE CWSPN-ITCP9718-NAME TO WS-REQUESTED-MODULE.             00723
+          546:            PERFORM T200-CALL-ITCP9718.                                  00730
+          654:            CALL 'ITCP9718'          USING ITSIAPC
+          693:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9718 TO WS-RSN-CD.         00898
+0    ELEMENT   ITCP9718
+          465:            PERFORM J200-SETUP-FOR-CALL-ITCP9242.                        00503
+          679:            MOVE CWSPN-ITCP9242-NAME TO WS-REQUESTED-MODULE.             00749
+1         690:            PERFORM T200-CALL-ITCP9242.                                  00756
+          870:            CALL 'ITCP9242'          USING ITSIAPC
+          907:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9242 TO WS-RSN-CD.         01061
+0    ELEMENT   ITCP9732
+0    ELEMENT   IUCP1004
+         2077:               PERFORM S1083-SET-UP-FOR-IUCP9134
+         2709:            PERFORM       S1070-SET-UP-FOR-ITCP9358.
+         2804:                PERFORM S1082-SET-UP-FOR-IUCP9134.
+         4483:                PERFORM T330-CALL-TO-IUCP9134
+         4495:                PERFORM T265-CALL-TO-ITCP9358
+         4901:            MOVE    CWSNM-ITCP9358-NAME                       TO
+         4970:            MOVE    CWSNM-IUCP9134-NAME                       TO
+         4985:            MOVE    CWSNM-IUCP9134-NAME                       TO
+0    ELEMENT   IUCP9102
+          803:            PERFORM  J160-SETUP-FOR-CALL-IUCP9150.
+          815:            PERFORM  J170-SETUP-FOR-CALL-IUCP9152.
+          874:            PERFORM  J110-SETUP-FOR-CALL-IUCP9124.
+          919:            PERFORM J110-SETUP-FOR-CALL-IUCP9124.
+         1000:            MOVE     CWSNM-IUCP9124-NAME          TO
+         1054:            MOVE       CWSNM-IUCP9150-NAME        TO
+         1057:            MOVE       CWSNM-IUCP9150-NAME        TO
+         1063:            MOVE       CWSNM-IUCP9150-NAME        TO
+         1066:            PERFORM    T200-CALL-IUCP9150.
+         1077:            MOVE       CWSNM-IUCP9152-NAME        TO
+         1080:            MOVE       CWSNM-IUCP9152-NAME        TO
+1        1086:            MOVE       CWSNM-IUCP9152-NAME        TO
+         1089:            PERFORM    T300-CALL-IUCP9152.
+         1276:            CALL 'IUCP9150'          USING ITSIAPC
+         1337:            CALL 'IUCP9152'          USING ITSIAPC
+0    ELEMENT   IUCP9104
+         1134:            MOVE     CWSNM-ITCP9248-NAME          TO
+         1141:            MOVE     CWSNM-ITCP9248-NAME          TO
+         1144:            PERFORM  TA-CALL-ITCP9248.
+         1276:            CALL 'ITCP9248'          USING  ITSIAPC
+0    ELEMENT   IUCP9108
+0    ELEMENT   IUCP9112
+         1749:            MOVE     CWSNM-ITCP9248-NAME          TO
+         1756:            MOVE     CWSNM-ITCP9248-NAME          TO
+         1759:            PERFORM  T100-CALL-ITCP9248.
+         2817:            CALL 'ITCP9248'          USING  ITSIAPC
+0    ELEMENT   IUCP9116
+         1228:            PERFORM JA-SET-UP-CALL-IUCP9118
+         1232:            PERFORM YA100-CALL-IUCP9118
+         1241:            PERFORM JB-SET-UP-CALL-IUCP9120
+         1247:            PERFORM YA200-CALL-IUCP9120
+         1256:            PERFORM JC-SET-UP-CALL-IUCP9122.
+         1261:            PERFORM YA300-CALL-IUCP9122.
+         1385:            MOVE CWSNM-IUCP9118-NAME TO WS-REQUESTED-MODULE
+         1389:            MOVE CWSNM-IUCP9118-NAME TO
+         1396:            MOVE CWSNM-IUCP9120-NAME TO WS-REQUESTED-MODULE
+         1400:            MOVE CWSNM-IUCP9120-NAME TO
+         1407:            MOVE CWSNM-IUCP9122-NAME TO WS-REQUESTED-MODULE
+1        1411:            MOVE CWSNM-IUCP9122-NAME TO
+         1764:            CALL 'IUCP9118'          USING
+         1786:            CALL 'IUCP9120'          USING
+         1809:            CALL 'IUCP9122'          USING
+0    ELEMENT   IUCP9118
+0    ELEMENT   IUCP9120
+0    ELEMENT   IUCP9122
+0    ELEMENT   IUCP9124
+          788:                PERFORM C350-CALL-ITCP9732
+         1041:                PERFORM C350-CALL-ITCP9732
+         1161:            MOVE CWSNM-IUCP9180-NAME TO WS-REQUESTED-MODULE.
+         1335:                PERFORM C350-CALL-ITCP9732.
+         1371:            PERFORM C350-CALL-ITCP9732.
+         1836:            MOVE CWSNM-ITCP9732-NAME TO WS-REQUESTED-MODULE.
+         1843:            PERFORM T600-CALL-ITCP9732.
+         1877:            PERFORM C350-CALL-ITCP9732.
+0    ELEMENT   IUCP9130
+0    ELEMENT   IUCP9132
+0    ELEMENT   IUCP9134
+0    ELEMENT   IUCP9150
+         1633:                PERFORM  J230-SETUP-FOR-CALL-IUCP9134
+         3145:            PERFORM  J060-SETUP-FOR-CALL-IUCP9132.
+         3167:            PERFORM  J060-SETUP-FOR-CALL-IUCP9132.
+         3234:            PERFORM  J090-SETUP-FOR-CALL-IUCP9104.
+         3360:            PERFORM J080-SETUP-FOR-CALL-ITCP9700.
+         3406:            PERFORM  J150-SETUP-FOR-CALL-ITCP9248.
+         3440:                PERFORM  J140-SETUP-FOR-CALL-IUCP9112
+         3445:                PERFORM  J260-SETUP-FOR-CALL-IUCP9164.
+         3715:            PERFORM  J230-SETUP-FOR-CALL-IUCP9134.
+         5071:            PERFORM    J120-SETUP-FOR-CALL-IUCP9108.
+         6445:            MOVE       CWSNM-IUCP9132-NAME        TO
+         6518:            MOVE       CWSNM-ITCP9700-NAME        TO
+         6595:            MOVE       CWSNM-IUCP9104-NAME        TO
+         6716:            MOVE       CWSNM-IUCP9108-NAME        TO
+         6797:            MOVE       CWSNM-IUCP9112-NAME        TO
+         6890:            MOVE       CWSNM-ITCP9248-NAME        TO
+         7073:            MOVE     CWSNM-IUCP9124-NAME          TO
+         7196:            MOVE       CWSNM-IUCP9134-NAME        TO
+         7312:            MOVE       CWSNM-IUCP9164-NAME        TO
+         7478:            MOVE       CWSNM-IUCP9150-NAME        TO
+         7523:            PERFORM  J190-SETUP-FOR-CALL-IUCP9124.
+         8206:                MOVE   CWSEC-SEVERE-SYS-ERR-IUCP9150   TO
+         8226:                MOVE   CWSEC-SEVERE-SYS-ERR-IUCP9104   TO
+         8236:                MOVE   CWSEC-SEVERE-SYS-ERR-IUCP9108   TO
+         8246:                MOVE   CWSEC-SEVERE-SYS-ERR-IUCP9112   TO
+         8261:                MOVE   CWSEC-SEVERE-SYS-ERR-IUCP9118   TO
+         8266:                MOVE   CWSEC-SEVERE-SYS-ERR-IUCP9120   TO
+         8271:                MOVE   CWSEC-SEVERE-SYS-ERR-IUCP9122   TO
+         8276:                MOVE   CWSEC-SEVERE-SYS-ERR-IUCP9124   TO
+         8286:                MOVE   CWSEC-SEVERE-SYS-ERR-IUCP9132   TO
+         8356:                MOVE   CWSEC-SEVERE-SYS-ERR-ITCP9700   TO
+         8604:                MOVE CWSNM-IUCP9150-NAME                    TO
+         8618:                MOVE CWSNM-IUCP9150-NAME                    TO
+         8632:                MOVE CWSNM-IUCP9150-NAME                    TO
+         8646:                MOVE CWSNM-IUCP9150-NAME                    TO
+         8664:                MOVE CWSNM-IUCP9150-NAME                    TO
+         9786:            MOVE       CWSEC-SEVERE-SYS-ERR-IUCP9150 TO
+         9792:            PERFORM    F260-SEVERE-LOG-SETUP-IUCP9150.
+0    ELEMENT   IUCP9152
+         2182: 020490         PERFORM  J210-SETUP-FOR-CALL-IUCP9134                    00020490
+         3603:            PERFORM    N500-SETUP-FOR-CALL-IUCP9124.
+         3665:            PERFORM  J050-SETUP-FOR-CALL-IUCP9132.
+         3708:            PERFORM  J050-SETUP-FOR-CALL-IUCP9132.
+         3922:            PERFORM J070-SETUP-FOR-CALL-ITCP9700.
+         3983:                PERFORM  J120-SETUP-FOR-CALL-IUCP9112
+         3988:                PERFORM  J230-SETUP-FOR-CALL-IUCP9164.
+         4251:            PERFORM  J210-SETUP-FOR-CALL-IUCP9134.
+         5366:            PERFORM    J110-SETUP-FOR-CALL-IUCP9108.
+         7446:            MOVE       CWSNM-ITCP9248-NAME        TO
+         7450:            PERFORM    J130-SETUP-FOR-CALL-ITCP9248.
+         7773:            MOVE       CWSNM-IUCP9132-NAME        TO
+         7846:            MOVE       CWSNM-ITCP9700-NAME        TO
+         8039:            MOVE       CWSNM-IUCP9108-NAME        TO
+         8075:            MOVE       CWSNM-IUCP9112-NAME        TO
+         8150:            MOVE       CWSNM-ITCP9248-NAME        TO
+         8418:            MOVE       CWSNM-IUCP9134-NAME        TO
+         8509:            MOVE       CWSNM-IUCP9164-NAME        TO
+         8793:            MOVE       CWSNM-IUCP9152-NAME        TO
+         8828:            PERFORM  N500-SETUP-FOR-CALL-IUCP9124.
+         9130:            MOVE     CWSNM-IUCP9124-NAME          TO
+         9595:                MOVE   CWSEC-SEVERE-SYS-ERR-IUCP9152   TO
+         9605:                MOVE   CWSEC-SEVERE-SYS-ERR-IUCP9108   TO
+         9610:                MOVE   CWSEC-SEVERE-SYS-ERR-IUCP9112   TO
+         9625:                MOVE   CWSEC-SEVERE-SYS-ERR-IUCP9118   TO
+         9630:                MOVE   CWSEC-SEVERE-SYS-ERR-IUCP9120   TO
+         9635:                MOVE   CWSEC-SEVERE-SYS-ERR-IUCP9122   TO
+         9640:                MOVE   CWSEC-SEVERE-SYS-ERR-IUCP9124   TO
+         9650:                MOVE   CWSEC-SEVERE-SYS-ERR-IUCP9132   TO
+         9720:                MOVE   CWSEC-SEVERE-SYS-ERR-ITCP9700   TO
+         9890:                MOVE CWSNM-IUCP9152-NAME                    TO
+         9904:                MOVE CWSNM-IUCP9152-NAME                    TO
+         9918:                MOVE CWSNM-IUCP9152-NAME                    TO
+         9932:                MOVE CWSNM-IUCP9152-NAME                    TO
+         9950:                MOVE CWSNM-IUCP9152-NAME                    TO
+         1078:            MOVE       CWSEC-SEVERE-SYS-ERR-IUCP9152 TO
+         1081:            PERFORM    F180-SEVERE-LOG-SETUP-IUCP9152.
+0    ELEMENT   IUCP9160
+          515:                PERFORM J030-SETUP-FOR-CALL-ITCP9248
+          524:                PERFORM J060-SETUP-FOR-CALL-ITCP9700
+          536:                PERFORM J100-SETUP-FOR-CALL-IUCP9104
+          542:                PERFORM J120-SETUP-FOR-CALL-IUCP9108
+          548:                PERFORM J140-SETUP-FOR-CALL-IUCP9112
+          557:                PERFORM J170-SETUP-FOR-CALL-IUCP9124
+          563:                PERFORM J190-SETUP-FOR-CALL-IUCP9132
+          566:                PERFORM J200-SETUP-FOR-CALL-IUCP9134
+          578:                PERFORM J260-SETUP-FOR-CALL-IUCP9164
+          647:            MOVE       CWSNM-ITCP9248-NAME        TO
+          653:            MOVE       CWSNM-ITCP9248-NAME        TO
+          676:            PERFORM    T030-CALL-ITCP9248.
+          754:            MOVE       CWSNM-ITCP9700-NAME        TO
+          760:            MOVE       CWSNM-ITCP9700-NAME        TO
+          789:            PERFORM    T060-CALL-ITCP9700.
+          916:            MOVE       CWSNM-IUCP9104-NAME        TO
+          922:            MOVE       CWSNM-IUCP9104-NAME        TO
+          945:            PERFORM    T100-CALL-IUCP9104.
+          977:            MOVE       CWSNM-IUCP9108-NAME        TO
+          983:            MOVE       CWSNM-IUCP9108-NAME        TO
+          992:            PERFORM    T120-CALL-IUCP9108.
+         1034:            MOVE       CWSNM-IUCP9112-NAME        TO
+         1040:            MOVE       CWSNM-IUCP9112-NAME        TO
+         1077:            PERFORM    T140-CALL-IUCP9112.
+         1161:            MOVE     CWSNM-IUCP9124-NAME          TO
+         1167:            MOVE     CWSNM-IUCP9124-NAME          TO
+         1189:            PERFORM T170-CALL-IUCP9124.
+         1218:            MOVE       CWSNM-IUCP9132-NAME        TO
+         1224:            MOVE       CWSNM-IUCP9132-NAME        TO
+         1240:            PERFORM    T190-CALL-IUCP9132.
+         1250:            MOVE       CWSNM-IUCP9134-NAME        TO
+         1256:            MOVE       CWSNM-IUCP9134-NAME        TO
+         1259:            PERFORM    T200-CALL-IUCP9134.
+         1340:            MOVE       CWSNM-IUCP9164-NAME        TO
+         1346:            MOVE       CWSNM-IUCP9164-NAME        TO
+         1349:            PERFORM    T260-CALL-IUCP9164.
+         1462:            CALL 'ITCP9248'          USING  ITSIAPC
+         1503:            CALL 'ITCP9700'          USING ITSIAPC
+         1580:            CALL 'IUCP9104'          USING ITSIAPC
+         1609:            CALL 'IUCP9108'          USING ITSIAPC
+         1634:            CALL 'IUCP9112'          USING ITSIAPC
+         1733:            CALL 'IUCP9124'          USING ITSIAPC
+         1778:            CALL 'IUCP9132'          USING ITSIAPC
+         1799:            CALL 'IUCP9134'          USING ITSIAPC
+         1923:            CALL 'IUCP9164'          USING ITSIAPC
+0    ELEMENT   IUCP9162
+0    ELEMENT   IUCP9164
+         1332:            MOVE     CWSNM-ITCP9248-NAME          TO
+         1339:            MOVE     CWSNM-ITCP9248-NAME          TO
+         1342:            PERFORM  T100-CALL-ITCP9248.
+         2577:            CALL 'ITCP9248'          USING  ITSIAPC
+0    ELEMENT   IUCP9170
+           99:               PERFORM B100-CALL-IUCP9172.
+          110:            MOVE       CWSNM-IUCP9172-NAME        TO
+          114:            CALL 'IUCP9172'           USING ITSIAPC
+0    ELEMENT   IUCP9172
+         1955:            MOVE CWSEC-SEVERE-SYS-ERR-IUCP9172  TO
+0    ELEMENT   IUCP9356
+          624:                        PERFORM J300-SETUP-FOR-CALL-ITCP9358
+         1588:            MOVE       CWSPN-ITCP9358-NAME             TO
+         1600:            MOVE       CWSPN-ITCP9358-NAME             TO
+         1603:            PERFORM    T300-CALL-ITCP9358.
+         1733:            CALL 'ITCP9358'          USING ITSIAPC
+0    ELEMENT   ITCP6172
+0    ELEMENT   ITCP9164
+         2828: 106000     MOVE WS-MODULE-ITCP9166      TO                              01172
+         2837: 106600     CALL 'ITCP9166'         USING LS-ITSIAPC-RECORD,             00220101
+0    ELEMENT   ITCP9166
+          275:            PERFORM J100-SETUP-FOR-CALL-ITCP9358.                        00404
+          383:            PERFORM J200-SETUP-FOR-CALL-ITCP9242.                        00493
+          412:            PERFORM J200-SETUP-FOR-CALL-ITCP9242.                        00522
+          533:            MOVE       CWSPN-ITCP9358-NAME             TO                00624
+          545:            MOVE       CWSPN-ITCP9358-NAME             TO                00636
+          547:            PERFORM    T100-CALL-ITCP9358.                               00638
+          561:            MOVE       CWSPN-ITCP9242-NAME     TO
+          570:            MOVE       CWSPN-ITCP9242-NAME     TO
+          591:            PERFORM    T200-CALL-ITCP9242.                               00662
+          607:            CALL 'ITCP9358'          USING ITSIAPC                       00669
+          618:            CALL 'ITCP9242'          USING ITSIAPC                       00677
+0    ELEMENT   ITCP9242
+          781:            PERFORM J300-SETUP-FOR-CALL-ITCP9246.
+          795:            PERFORM J400-SETUP-FOR-CALL-ITCP9248.
+          823:            PERFORM J700-SETUP-FOR-CALL-ITCP9258.                        00080613
+          949:            PERFORM J110-SETUP-FOR-CALL-ITDRTE00.
+1        1157:            PERFORM J650-SETUP-FOR-CALL-ITCP9732.                        00112900
+         1196:            MOVE WS-ITDRTE00-NAME       TO WS-REQUESTED-MODULE.
+         1202:            PERFORM T110-CALL-ITDRTE00.
+         1246:            MOVE CWSPN-ITCP9246-NAME TO WS-REQUESTED-MODULE.             00125313
+         1250:            PERFORM T300-CALL-ITCP9246.                                  00126013
+         1262:            MOVE CWSPN-ITCP9248-NAME TO WS-REQUESTED-MODULE.             00127213
+         1266:            PERFORM T400-CALL-ITCP9248.                                  00127913
+         1298:            MOVE CWSPN-ITCP9732-NAME TO WS-REQUESTED-MODULE.             00132800
+         1302:            PERFORM T650-CALL-ITCP9732.                                  00133400
+         1316:            MOVE CWSPN-ITCP9258-NAME TO WS-REQUESTED-MODULE.             00136713
+         1320:            PERFORM T700-CALL-ITCP9258.                                  00137413
+         1453:            CALL 'ITCP9246'          USING ITSIAPC
+         1470:            CALL 'ITCP9248'          USING ITSIAPC
+         1505:            CALL 'ITCP9732'          USING ITSIAPC                       00162700
+         1524:            CALL 'ITCP9258'          USING ITSIAPC
+         1567:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9242 TO WS-RSN-CD.         00168617
+         1571:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9246 TO WS-RSN-CD.         00168917
+         1575:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9248 TO WS-RSN-CD.         00169217
+         1583:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9258 TO WS-RSN-CD.         00169817
+         1587:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9286 TO WS-RSN-CD.         00170117
+         1600:                MOVE CWSEC-SEVERE-SYS-ERR-ITDRTE00 TO WS-RSN-CD.
+         1610:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9732 TO WS-RSN-CD.         00173100
+         1729:                MOVE CWSPN-ITCP9242-NAME TO                              00181017
+         1739:                MOVE CWSPN-ITCP9242-NAME TO                              01944
+         2008:            MOVE CWSPN-ITCP9242-NAME      TO CSAPI-CALLING-PGM-ID.
+0    ELEMENT   ITCP9246
+0    ELEMENT   ITCP9248
+0    ELEMENT   ITCP9250
+0    ELEMENT   ITCP9258
+         2745: 159700     MOVE       CWSPN-ITCP9286-NAME             TO                15970024
+         2751: 160300     MOVE       CWSPN-ITCP9286-NAME             TO                16030024
+         2754: 160600     PERFORM    T100-CALL-MODULE-ITCP9286.                        16060024
+         4980: 302000      CALL 'ITCP9286'        USING ITSIAPC                        30201099
+0    ELEMENT   ITCP9286
+0    ELEMENT   ITCP9356
+          211: 028900         PERFORM J300-SETUP-FOR-CALL-ITCP9358.                    ITCP9356
+          222: 034900     MOVE       CWSPN-ITCP9358-NAME             TO                ITCP9356
+          234: 036100     MOVE       CWSPN-ITCP9358-NAME             TO                ITCP9356
+          237: 036400     PERFORM    T300-CALL-ITCP9358.                               ITCP9356
+          249: 042700     CALL 'ITCP9358'          USING ITSIAPC                       ITCP9356
+0    ELEMENT   ITCP9358
+0    ELEMENT   ITCP9700
+          749:            PERFORM J100-SETUP-FOR-CALL-ITCP9242.                        00621
+          756:            PERFORM J900-SETUP-FOR-CALL-ITCP9702.                        00634
+          961:            PERFORM J650-SETUP-FOR-CALL-ITCP9732.
+          998:            MOVE CWSPN-ITCP9242-NAME    TO WS-REQUESTED-MODULE.          00855
+         1006:            PERFORM T100-CALL-ITCP9242.                                  00862
+         1049: 100300     MOVE CWSPN-ITCP9732-NAME TO WS-REQUESTED-MODULE.             00958
+         1054: 101700         PERFORM T650-CALL-ITCP9732                               00968
+         1058: 102100         PERFORM T655-CALL-ITCP9732.                              00972
+         1116:            MOVE CWSPN-ITCP9702-NAME    TO WS-REQUESTED-MODULE.          00967
+         1120:            PERFORM T900-CALL-ITCP9702.                                  00974
+         1215:            CALL 'ITCP9242'          USING  ITSIAPC
+         1305:            CALL 'ITCP9702'          USING  ITSIAPC
+1        1345:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9242 TO WS-RSN-CD.         01232
+         1349:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9246 TO WS-RSN-CD.         01235
+         1353:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9248 TO WS-RSN-CD.         01238
+         1366: 146500         MOVE CWSEC-SEVERE-SYS-ERR-ITDRTE00 TO WS-RSN-CD.
+         1375:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9702 TO WS-RSN-CD.         01268
+         1379:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9704 TO WS-RSN-CD.         01271
+         1387:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9708 TO WS-RSN-CD.         01277
+         1407:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9718 TO WS-RSN-CD.         01292
+         1427: 150400         MOVE CWSEC-SEVERE-SYS-ERR-ITCP9728 TO WS-RSN-CD.         01424
+         1431: 150400         MOVE CWSEC-SEVERE-SYS-ERR-ITCP9730 TO WS-RSN-CD.         01424
+         1435: 150400         MOVE CWSEC-SEVERE-SYS-ERR-ITCP9732 TO WS-RSN-CD.         01424
+         1553:                MOVE CWSPN-ITCP9700-NAME TO                              01386
+0    ELEMENT   ITCP9702
+          647:            PERFORM J400-SETUP-FOR-CALL-ITCP9704.                        00790
+          691:            PERFORM J110-SETUP-FOR-CALL-ITDRTE00.
+          731:            PERFORM J650-SETUP-FOR-CALL-ITCP9732.                        00882
+          802:            PERFORM J110-SETUP-FOR-CALL-ITDRTE00.
+         1052:            PERFORM J650-SETUP-FOR-CALL-ITCP9732.                        01118
+         1087:            MOVE WS-ITDRTE00-NAME       TO WS-REQUESTED-MODULE.
+         1093:            PERFORM T110-CALL-ITDRTE00.
+         1129:            MOVE CWSPN-ITCP9704-NAME TO WS-REQUESTED-MODULE.             01274
+         1134:            PERFORM T400-CALL-ITCP9704.                                  01281
+         1165: 100300     MOVE CWSPN-ITCP9732-NAME TO WS-REQUESTED-MODULE.             00958
+         1172: 101700         PERFORM T650-CALL-ITCP9732                               00968
+         1176: 102100         PERFORM T655-CALL-ITCP9732.                              00972
+         1327:            CALL 'ITCP9704'          USING ITSIAPC
+         1372:            CALL 'ITCP9732'          USING ITSIAPC                       00162700
+         1389:            CALL 'ITCP9732'          USING ITSIAPC                       00162700
+         1455:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9704 TO WS-RSN-CD.         01807
+         1475:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9718 TO WS-RSN-CD.         02020
+         1504:                MOVE CWSEC-SEVERE-SYS-ERR-ITDRTE00 TO WS-RSN-CD.
+         1513:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9728 TO WS-RSN-CD.         01774
+         1517:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9730 TO WS-RSN-CD.         01774
+         1521:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9732 TO WS-RSN-CD.         01774
+         1622:                MOVE CWSPN-ITCP9702-NAME TO                              01922
+0    ELEMENT   ITCP9704
+          728:            PERFORM J300-SETUP-FOR-CALL-ITCP9246.                        00779
+          759:            PERFORM J400-SETUP-FOR-CALL-ITCP9248.                        00813
+          776:            PERFORM J700-SETUP-FOR-CALL-ITCP9708.                        00830
+         1080:            MOVE CWSPN-ITCP9246-NAME TO WS-REQUESTED-MODULE.             01166
+         1085:            PERFORM T300-CALL-ITCP9246.                                  01173
+         1136:            MOVE CWSPN-ITCP9248-NAME TO WS-REQUESTED-MODULE.             01217
+         1141:            PERFORM T400-CALL-ITCP9248.                                  01224
+         1153:            MOVE CWSPN-ITCP9708-NAME TO WS-REQUESTED-MODULE.             01239
+         1158:            PERFORM T700-CALL-ITCP9708.                                  01246
+         1488:            CALL 'ITCP9246'          USING ITSIAPC
+         1520:            CALL 'ITCP9248'          USING ITSIAPC
+         1538:            CALL 'ITCP9708'          USING ITSIAPC
+         1566:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9246 TO WS-RSN-CD.         01761
+         1569:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9248 TO WS-RSN-CD.         01764
+         1584:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9708 TO WS-RSN-CD.         01779
+         1666:                MOVE CWSPN-ITCP9704-NAME TO                              01861
+0    ELEMENT   ITCP9708
+0    ELEMENT   ITCP9710
+          524:            MOVE CWSPN-ITCP9286-NAME  TO
+          530:            MOVE CWSPN-ITCP9286-NAME  TO
+          533:            PERFORM T100-CALL-MODULE-ITCP9286.
+0    ELEMENT   ITCP9712
+          359:            PERFORM J200-SETUP-FOR-CALL-ITCP9718.                        00508
+          539:            MOVE CWSPN-ITCP9718-NAME TO WS-REQUESTED-MODULE.             00723
+          546:            PERFORM T200-CALL-ITCP9718.                                  00730
+          654:            CALL 'ITCP9718'          USING ITSIAPC
+          693:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9718 TO WS-RSN-CD.         00898
+0    ELEMENT   ITCP9718
+          465:            PERFORM J200-SETUP-FOR-CALL-ITCP9242.                        00503
+          679:            MOVE CWSPN-ITCP9242-NAME TO WS-REQUESTED-MODULE.             00749
+          690:            PERFORM T200-CALL-ITCP9242.                                  00756
+          870:            CALL 'ITCP9242'          USING ITSIAPC
+          907:                MOVE CWSEC-SEVERE-SYS-ERR-ITCP9242 TO WS-RSN-CD.         01061
+0    ELEMENT   ITCP9728
+         1424: 132600     PERFORM J200-SETUP-FOR-CALL-ITCP9730.                              00
+         1463: 135600     PERFORM J200-SETUP-FOR-CALL-ITCP9730.                              00
+         1553: 142010     PERFORM J200-SETUP-FOR-CALL-ITCP9730.                              00
+         1730: 146710     PERFORM J200-SETUP-FOR-CALL-ITCP9730.                              00
+         1769: 149910     PERFORM J200-SETUP-FOR-CALL-ITCP9730.                              00
+         1811: 154410     PERFORM J200-SETUP-FOR-CALL-ITCP9730.                              00
+         1851: 157510     PERFORM J200-SETUP-FOR-CALL-ITCP9730.                              00
+         1890: 160600     PERFORM J200-SETUP-FOR-CALL-ITCP9730.
+         2015:            MOVE CWSPN-ITCP9730-NAME TO SIAPC-MODULE-NAME(2).            16803000
+         2017: 162200     MOVE CWSPN-ITCP9730-NAME TO WS-REQUESTED-MODULE.                   00
+1        2018: 162300     PERFORM T200-CALL-ITCP9730.
+0    ELEMENT   ITCP9730
+0    ELEMENT   ITCP9732

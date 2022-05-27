@@ -1,0 +1,59 @@
+.main-container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	
+}
+#button button {
+padding: 20px;
+
+}
+.subcontainer {
+    float : left;
+    padding: 5% 8% 0% 6%;
+}
+.child1{
+	margin: 10px 5% 10px 10%;
+	padding: 20px;
+	height: 100%;
+	width:100%;
+	align-content: center;
+	border-radius: 5px;
+	background-color: #f4f4f4;
+
+
+}
+.child2 {
+	background-color: darkred;
+	margin: 20px;
+	padding: 20px;
+	height: 100%;
+	width: 45%;
+}
+
+.tableclass .desc{
+	border-radius: 10px;
+	margin-right: 10px;
+	padding: 7px;
+	border-style: outset;
+}
+.tableclass td,th {
+	margin: 5px;
+	padding: 5px;
+}
+
+.tableclass {
+	margin-top: 30px;
+	padding: 30px;
+}
+
+.filediv {
+	align-items: center;
+}
+.filediv td {
+	margin-right: 20px;
+	padding: 0px 20px 10px 25px;
+
+}
