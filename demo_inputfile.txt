@@ -1,0 +1,59 @@
+0    ELEMENT   ABUIY091
+           14:       *                 PRIOR TO POPULATING BAJSDF90.                  *
+0    ELEMENT   UYTV7855
+            5: 000500    COPY MEMBER:  MUNNAF07                                        
+0    ELEMENT   MUNNAF99
+            5:       *   COPYMEMBER:   MUNNAF09                                       *
+           12:       *   FUNCTION:     STRUCTURE TO HOLD MUNNAF09 DURING COMPRESSION   *
+0    ELEMENT   ABCD1234
+          346:                                             'ABCD1234-05'.
+          349:                                             'ABCD1234-07'.
+         7139:            05  MU-ABCD0123-ENTERED           PIC X(01)  VALUE SPACES.
+         2799:            MOVE NNAF-ABCD0123-ENTERED-IND
+         2800:              TO MU-ABCD0123-ENTERED.
+0    ELEMENT   DCBA4321
+            2:        PROGRAM-ID.                     DCBA4321.
+           10: 001000*   MODULE      : DCBA4321                                      *
+           28:       *                                  FOR THE CALL TO DCBR4621      *
+           50:       *                                  CALL TO ABCFUE0(WILL RESULT  *
+          102:            05  WS-MODULE-ID               PIC X(08) VALUE 'DCBA4321'.
+          179:       *    ONLY USED IN THE CALL TO FBSJHF89
+          251:            '***  DCBA4321 WORKING-STORAGE ENDS HERE  ***'.
+          531:            PERFORM J100-CALL-DCBA4321-OPEN-FILES THRU J100-EXIT.
+          563:            PERFORM J200-CALL-DCBA4321-CLOSE-FILES THRU J200-EXIT.
+
+         1218:        T300-CALL-DCBA4321.
+         1222:            CALL 'DCBA4321'          USING MUNAPC
+
+
+0    ELEMENT   QWERTY89
+            2:        PROGRAM-ID.                     QWERTY89.
+           10:       *   MODULE:       QWERTY89                                       *
+           85:       *         TO QWEYTY89) AND LR036 (MOVED TO QWE8889).            *00787002
+          108:            05  MU-MODULE-ID               PIC X(8)  VALUE 'QWERTY89'.   01001000
+          115:                    'QWERTY89-ALIM 1ST LEVEL VALID'.                     01008000
+         1010:       *14.0.1  TD_92489  KJO  REMOVED LR035 EDIT --> QWERTY89           09651003
+         1254:        T400-CALL-ZXCV9087.
+         1259:            CALL 'ZXCV9087'          USING WS-MUNAPC
+         1330:        T600-CALL-YUIO9127.
+         1335:            CALL 'YUIO9127'          USING MUNAPC
+
+0    ELEMENT   YTREWQ98
+            2:        PROGRAM-ID.                     YTREWQ98.
+           10:       *   MODULE:       YTREWQ98                                      *
+           85:       *         TO QWEYTY89) AND LR036 (MOVED TO QWE8889).            *00787002
+          108:            05  MU-MODULE-ID               PIC X(8)  VALUE 'YTREWQ98'.   01001000
+          115:                    'QWERTY89-ALIM 1ST LEVEL VALID'.                     01008000
+         1010:       *14.0.1  TD_92489  KJO  REMOVED LR035 EDIT --> YTREWQ98           09651003
+         1254:        T400-MOVE-ZXCV9087.
+         1259:            MOVE 'ZXCV9087'          USING WS-MUNAPC
+         1330:        T600-CALL-YUIO9127.
+         1335:            MOVE 'YUIO9127'          USING MUNAPC
+
+0    ELEMENT   MUNJCL11
+           34: //* **ITS210   - UPDATED THE DD FROM SYSIN TO ABCEU IN MUNPROC   **   00180000
+          218: //MUN0830  EXEC PGM=MUNNPROC,REGION=4096K
+
+0    ELEMENT   MUNJCL12
+           34: //* **ITS210   - UPDATED THE DD FROM SYSIN TO ABUETD IN MUNPROC   **   00180000
+          218: //MUN0830  EXEC PGM=MUNNPRO2,REGION=4096K
